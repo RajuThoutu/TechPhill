@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Philosophers &mdash; Exploring the Future of Technology and Ethics</title>
+    <meta
+      name="description"
+      content="Tech Philosophers is a collective exploring the intersection of technology, humanity, and ethics through conversations, labs, and community events."
+    />
+    <meta property="og:title" content="Tech Philosophers" />
+    <meta
+      property="og:description"
+      content="Exploring the future of technology, ethics, and community through research, storytelling, and immersive gatherings."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/orbit.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tech Philosophers" />
+    <meta
+      name="twitter:description"
+      content="Weekly insights and experiments guiding technology with humanity at the center."
+    />
+    <meta name="theme-color" content="#5b55ff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Skip to main content</a>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="logo" href="#home">
+          <span aria-hidden="true">&#9678;</span>
+          Tech Philosophers
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="nav-toggle__line"></span>
+            <span class="nav-toggle__line"></span>
+            <span class="nav-toggle__line"></span>
+          </button>
+          <ul id="primary-menu" class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#pillars">Pillars</a></li>
+            <li><a href="#podcast">Podcast</a></li>
+            <li><a href="#insights">Insights</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="theme-toggle__icon" viewBox="0 0 24 24" role="img" aria-hidden="true">
+            <circle class="theme-toggle__sun" cx="12" cy="12" r="5"></circle>
+            <path
+              class="theme-toggle__moon"
+              d="M21 12.79A9 9 0 0 1 11.21 3 7 7 0 1 0 21 12.79z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <p class="eyebrow">Future-forward conversations</p>
+            <h1>Guiding technology with thoughtful philosophy</h1>
+            <p class="hero__lead">
+              We are a collective of technologists, philosophers, and storytellers researching
+              how emerging innovations shape humanity &mdash; and how we can shape them back.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#pillars">Explore our pillars</a>
+              <a class="btn btn--ghost" href="#podcast">Listen to the podcast</a>
+            </div>
+            <dl class="hero__stats" aria-label="Community statistics">
+              <div>
+                <dt>Global Members</dt>
+                <dd><span data-count="5800">5,800</span>+</dd>
+              </div>
+              <div>
+                <dt>Research Notes</dt>
+                <dd><span data-count="180">180</span>+</dd>
+              </div>
+              <div>
+                <dt>Episodes Released</dt>
+                <dd><span data-count="74">74</span></dd>
+              </div>
+            </dl>
+          </div>
+          <figure class="hero__visual" aria-hidden="true">
+            <img src="assets/images/orbit.svg" alt="" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="pillars" id="pillars">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Our pillars</p>
+            <h2>Three lenses for asking better questions about technology</h2>
+            <p>
+              The Tech Philosophers framework blends critical analysis, creative experimentation,
+              and grassroots community insight. Choose a pillar to explore how we work.
+            </p>
+          </div>
+          <div class="pillars__layout">
+            <div class="pillars__tabs" role="tablist" aria-label="Pillars">
+              <button class="pillars__tab is-active" role="tab" aria-selected="true" aria-controls="pillar-ethics" id="tab-ethics">
+                Ethics Lab
+              </button>
+              <button class="pillars__tab" role="tab" aria-selected="false" aria-controls="pillar-futures" id="tab-futures">
+                Futures Studio
+              </button>
+              <button class="pillars__tab" role="tab" aria-selected="false" aria-controls="pillar-voices" id="tab-voices">
+                Community Voices
+              </button>
+            </div>
+            <div class="pillars__panels">
+              <article class="pillars__panel is-active" id="pillar-ethics" role="tabpanel" tabindex="0" aria-labelledby="tab-ethics">
+                <h3>Ethics Lab</h3>
+                <p>
+                  We synthesize philosophy, law, and lived experience to prototype ethical guardrails
+                  for emerging technologies. Think practical frameworks, open-source guidelines, and
+                  scenario planning that keeps humans at the center.
+                </p>
+                <ul class="pillars__list">
+                  <li>Publish thought experiments to stress-test new products.</li>
+                  <li>Partner with startups to co-create responsibility playbooks.</li>
+                  <li>Host monthly roundtables with ethicists and policy makers.</li>
+                </ul>
+              </article>
+              <article class="pillars__panel" id="pillar-futures" role="tabpanel" tabindex="-1" aria-labelledby="tab-futures">
+                <h3>Futures Studio</h3>
+                <p>
+                  Our studio turns speculative ideas into tangible prototypes. We run design sprints,
+                  rapid experiments, and open labs to imagine how human values can inform intelligent systems.
+                </p>
+                <ul class="pillars__list">
+                  <li>Create immersive experiences that explore alternative futures.</li>
+                  <li>Publish quarterly field guides on emerging technologies.</li>
+                  <li>Mentor founders building humane tools and civic tech.</li>
+                </ul>
+              </article>
+              <article class="pillars__panel" id="pillar-voices" role="tabpanel" tabindex="-1" aria-labelledby="tab-voices">
+                <h3>Community Voices</h3>
+                <p>
+                  We highlight artists, educators, and activists shaping our tech culture. Through editorial features
+                  and open salons we build inclusive spaces for nuance and honest debate.
+                </p>
+                <ul class="pillars__list">
+                  <li>Curate multimedia stories amplifying global perspectives.</li>
+                  <li>Hold neighborhood listening tours and youth workshops.</li>
+                  <li>Maintain a community knowledge base that anyone can remix.</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="podcast" id="podcast">
+        <div class="container">
+          <div class="section-heading section-heading--center">
+            <p class="eyebrow">Listen in</p>
+            <h2>The Tech Philosophers podcast</h2>
+            <p>
+              Weekly dialogues with builders, researchers, and dreamers exploring how we can align technology
+              with the flourishing of people and planet.
+            </p>
+          </div>
+          <div class="podcast__grid">
+            <article class="podcast__card">
+              <div class="podcast__meta">
+                <span class="podcast__tag">New</span>
+                <span>Episode 74</span>
+              </div>
+              <h3>Designing AI tools that elevate human creativity</h3>
+              <p>
+                Conversation with creative technologist Aisha Bryant about crafting co-creative systems and the
+                rituals that keep teams accountable.
+              </p>
+              <a class="podcast__link" href="#">Play episode</a>
+            </article>
+            <article class="podcast__card">
+              <div class="podcast__meta">
+                <span class="podcast__tag">Deep dive</span>
+                <span>Episode 73</span>
+              </div>
+              <h3>Repairing digital public squares</h3>
+              <p>
+                Civic technologist Nikhil Iyer joins to unpack the infrastructure required for trustworthy information
+                ecosystems and community-first platforms.
+              </p>
+              <a class="podcast__link" href="#">Play episode</a>
+            </article>
+            <article class="podcast__card">
+              <div class="podcast__meta">
+                <span class="podcast__tag">Field note</span>
+                <span>Episode 72</span>
+              </div>
+              <h3>When hardware meets the commons</h3>
+              <p>
+                A dispatch from our field research in Nairobi documenting makerspaces stewarding climate resilient hardware
+                and open knowledge.
+              </p>
+              <a class="podcast__link" href="#">Play episode</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="insights" id="insights">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Latest insights</p>
+            <h2>Research, essays, and tools from the Tech Philosophers team</h2>
+            <p>Filter by theme to see how our thinkers are probing the edges of what technology can become.</p>
+          </div>
+          <div class="insights__filters" role="toolbar" aria-label="Filter insights">
+            <button class="insights__filter is-active" data-filter="all">All</button>
+            <button class="insights__filter" data-filter="ethics">Ethics</button>
+            <button class="insights__filter" data-filter="policy">Policy</button>
+            <button class="insights__filter" data-filter="design">Design</button>
+            <button class="insights__filter" data-filter="community">Community</button>
+          </div>
+          <div class="insights__grid">
+            <article class="insight-card" data-category="ethics policy">
+              <h3>Six questions to ask before shipping autonomous systems</h3>
+              <p>
+                A framework to interrogate alignment, consent, and resilience in AI deployments, drawing on real-world pilots
+                from health care and public transit.
+              </p>
+              <a href="#" class="insight-card__link">Read the field guide</a>
+            </article>
+            <article class="insight-card" data-category="design community">
+              <h3>Listening sessions as a design superpower</h3>
+              <p>
+                Techniques for embedding community listening into product roadmaps, inspired by our workshops in Manila and Mexico City.
+              </p>
+              <a href="#" class="insight-card__link">View the workshop toolkit</a>
+            </article>
+            <article class="insight-card" data-category="policy ethics">
+              <h3>Regenerative governance for digital infrastructure</h3>
+              <p>
+                Exploring how public interest technology can cultivate ecosystems that replenish civic trust and planetary health.
+              </p>
+              <a href="#" class="insight-card__link">Dive into the essay</a>
+            </article>
+            <article class="insight-card" data-category="design ethics">
+              <h3>Reclaiming agency with ritualized tech breaks</h3>
+              <p>
+                Research notes on how purposeful time away from screens recalibrates our relationship with automation and productivity.
+              </p>
+              <a href="#" class="insight-card__link">Read the research notes</a>
+            </article>
+            <article class="insight-card" data-category="community">
+              <h3>The global salons shaping humane innovation</h3>
+              <p>
+                Highlights from our community gatherings celebrating intergenerational wisdom and cross-cultural collaboration.
+              </p>
+              <a href="#" class="insight-card__link">Explore the recap</a>
+            </article>
+            <article class="insight-card" data-category="policy design">
+              <h3>Policy playbooks for algorithmic accountability</h3>
+              <p>
+                Actionable templates for city leaders crafting accountable procurement and auditing practices for AI systems.
+              </p>
+              <a href="#" class="insight-card__link">Download the playbook</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="events" id="events">
+        <div class="container">
+          <div class="events__inner">
+            <div class="events__content">
+              <p class="eyebrow">Gatherings</p>
+              <h2>Labs, salons, and residencies</h2>
+              <p>
+                Our global community convenes regularly to test ideas and grow collective wisdom. Join an upcoming event
+                or pitch a collaboration.
+              </p>
+              <ul class="events__list">
+                <li>
+                  <strong>June 14</strong> &mdash; "Ethics in the Age of Generative Media" salon, hybrid from Berlin.
+                </li>
+                <li>
+                  <strong>July 02</strong> &mdash; Community residency applications open for systems thinking cohort.
+                </li>
+                <li>
+                  <strong>August 21</strong> &mdash; Futures Studio showcase featuring speculative prototypes.
+                </li>
+              </ul>
+              <a class="btn btn--primary" href="#contact">Request an invite</a>
+            </div>
+            <div class="events__card">
+              <h3>Host with Tech Philosophers</h3>
+              <p>
+                Bring a Tech Philosophers lab to your city, campus, or company. We partner with organizations ready to
+                experiment with community-led innovation.
+              </p>
+              <ul class="events__card-list">
+                <li>Curriculum co-design and facilitation</li>
+                <li>Hybrid event production</li>
+                <li>Documentation and storytelling support</li>
+              </ul>
+              <a class="events__card-link" href="#contact">Start the conversation</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter" id="contact">
+        <div class="container newsletter__inner">
+          <div class="newsletter__content">
+            <p class="eyebrow">Stay in orbit</p>
+            <h2>Subscribe and collaborate</h2>
+            <p>
+              Get research highlights, new episode drops, and invitations to private gatherings directly in your inbox.
+              Share a note if you're keen to collaborate.
+            </p>
+            <div class="newsletter__badges" aria-label="Highlights">
+              <span>Monthly digest</span>
+              <span>Early access to tools</span>
+              <span>Community AMAs</span>
+            </div>
+          </div>
+          <form class="newsletter__form" aria-label="Newsletter sign-up">
+            <label class="newsletter__label" for="newsletter-email">Email</label>
+            <input id="newsletter-email" type="email" name="email" placeholder="you@example.com" required />
+            <label class="newsletter__label" for="newsletter-message">Message (optional)</label>
+            <textarea id="newsletter-message" name="message" rows="4" placeholder="Tell us how you want to collaborate"></textarea>
+            <button class="btn btn--primary" type="submit">Join the orbit</button>
+            <p class="newsletter__feedback" role="status" aria-live="polite"></p>
+            <p class="newsletter__smallprint">We respect your time and attention. Unsubscribe anytime.</p>
+          </form>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="container">
+          <div class="section-heading section-heading--center">
+            <p class="eyebrow">FAQs</p>
+            <h2>Answers to frequent curiosities</h2>
+            <p>
+              Something still unclear? Browse these highlights or reach out. We love thoughtful questions and dialogue.
+            </p>
+          </div>
+          <div class="faq__list">
+            <article class="faq__item">
+              <h3>
+                <button aria-expanded="false">
+                  How can I contribute to Tech Philosophers research?
+                  <span class="faq__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="faq__body">
+                <p>
+                  We welcome collaborators across disciplines. Share your interests through the form above and our team will
+                  connect you with the right lab or project steward.
+                </p>
+              </div>
+            </article>
+            <article class="faq__item">
+              <h3>
+                <button aria-expanded="false">
+                  Do you offer speaking or facilitation engagements?
+                  <span class="faq__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="faq__body">
+                <p>
+                  Yes! From keynotes on humane innovation to participatory workshops, we tailor experiences for conferences,
+                  universities, and community spaces.
+                </p>
+              </div>
+            </article>
+            <article class="faq__item">
+              <h3>
+                <button aria-expanded="false">
+                  Can I sponsor the podcast or a community residency?
+                  <span class="faq__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="faq__body">
+                <p>
+                  Sponsorships keep our work accessible. Send us a note with your goals and we'll explore ethical partnerships
+                  that align with our values.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div class="site-footer__brand">
+          <a class="logo" href="#top">
+            <span aria-hidden="true">&#9678;</span>
+            Tech Philosophers
+          </a>
+          <p>
+            Charting technology's impact with curiosity, compassion, and courage. Join us as we build futures where everyone can thrive.
+          </p>
+        </div>
+        <div class="site-footer__links">
+          <div>
+            <h3>Explore</h3>
+            <ul>
+              <li><a href="#pillars">Pillars</a></li>
+              <li><a href="#podcast">Podcast</a></li>
+              <li><a href="#insights">Insights</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Connect</h3>
+            <ul>
+              <li><a href="mailto:hello@techphilosophers.com">Email</a></li>
+              <li><a href="#events">Events</a></li>
+              <li><a href="#faq">FAQs</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Social</h3>
+            <ul>
+              <li><a href="#">Mastodon</a></li>
+              <li><a href="#">YouTube</a></li>
+              <li><a href="#">Substack</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>&copy; <span id="copyright-year"></span> Tech Philosophers. Crafted with care.</p>
+        <a href="#top" class="site-footer__top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
