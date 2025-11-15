@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Insights — The Tech Philosophers</title>
+    <meta
+      name="description"
+      content="Explore modular insights across technology, mythology, education research, and society with expandable navigation and tags."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container header__inner">
+        <a class="brand" href="index.html" aria-label="The Tech Philosophers home">
+          <span class="brand__mark" aria-hidden="true">◎</span>
+          <span class="brand__text">
+            <span class="brand__title">The Tech Philosophers</span>
+            <span class="brand__tagline">Raju Thoutu</span>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="nav-toggle__line"></span>
+          <span class="nav-toggle__line"></span>
+          <span class="nav-toggle__line"></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary">
+          <ul id="primary-nav" class="site-nav__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="insights.html" aria-current="page">Insights</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="podcasts.html">Podcasts &amp; Videos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Activate dark mode">
+          <span class="sr-only">Toggle theme</span>
+          <span class="theme-toggle__icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content" class="page insights">
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Insights Library</p>
+          <h1>A modular, extendable knowledge system built for clarity.</h1>
+          <p class="lead">
+            Browse 500+ articles by category, subcategory, year, or tag. The navigation on the left scrolls independently so you
+            can explore without losing context.
+          </p>
+        </div>
+      </section>
+
+      <div class="container insights__layout">
+        <aside class="insights__sidebar" aria-label="Insights navigation">
+          <form class="search" role="search">
+            <label class="search__label" for="insight-search">Search the library</label>
+            <input
+              id="insight-search"
+              type="search"
+              name="search"
+              placeholder="Search topics, tags, or titles..."
+              autocomplete="off"
+            />
+          </form>
+
+          <nav class="side-nav" aria-label="Categories">
+            <details class="side-nav__section" id="technology-ai" open>
+              <summary>Technology &amp; AI Insights</summary>
+              <div class="side-nav__content">
+                <p class="side-nav__hint">Subcategories</p>
+                <ul>
+                  <li><button type="button" data-filter="llms-slms">LLMs &amp; SLMs</button></li>
+                  <li><button type="button" data-filter="enterprise-architecture">Enterprise Architecture</button></li>
+                  <li><button type="button" data-filter="pega-insights">Pega Insights</button></li>
+                  <li><button type="button" data-filter="applied-ai">Applied AI</button></li>
+                  <li><button type="button" data-filter="experiments-demos">Experiments &amp; Demos</button></li>
+                </ul>
+                <p class="side-nav__hint">Archives</p>
+                <ul class="side-nav__archive">
+                  <li><button type="button" data-filter="year-2024">2024</button></li>
+                  <li><button type="button" data-filter="year-2025">2025</button></li>
+                  <li><button type="button" data-filter="year-2026">2026</button></li>
+                </ul>
+              </div>
+            </details>
+            <details class="side-nav__section" id="mythology-analogies" open>
+              <summary>Mythology &amp; My Analogies</summary>
+              <div class="side-nav__content">
+                <p class="side-nav__hint">Subcategories</p>
+                <ul>
+                  <li><button type="button" data-filter="mahabharata">Mahabharata</button></li>
+                  <li><button type="button" data-filter="ramayana">Ramayana</button></li>
+                  <li><button type="button" data-filter="gita">Gita</button></li>
+                  <li><button type="button" data-filter="modern-analogies">Modern Analogies</button></li>
+                  <li><button type="button" data-filter="leadership-lessons">Leadership Lessons</button></li>
+                </ul>
+                <p class="side-nav__hint">Example posts</p>
+                <ul>
+                  <li><a href="article-template.html">If Rama replaced Arjuna</a></li>
+                  <li><a href="article-template.html">Why Krishna intervened with Kamsa</a></li>
+                </ul>
+              </div>
+            </details>
+            <details class="side-nav__section" id="education-research" open>
+              <summary>Education &amp; Research</summary>
+              <div class="side-nav__content">
+                <p class="side-nav__hint">Subcategories</p>
+                <ul>
+                  <li><button type="button" data-filter="us-education">US Education System</button></li>
+                  <li><button type="button" data-filter="montessori-cbse-gurukula">Montessori vs CBSE vs Gurukula</button></li>
+                  <li><button type="button" data-filter="child-psychology">Child Psychology</button></li>
+                  <li><button type="button" data-filter="anushtan-school">Anushtan School Ideation</button></li>
+                  <li><button type="button" data-filter="pedagogy-research">Pedagogy Research</button></li>
+                </ul>
+                <p class="side-nav__hint">Archives</p>
+                <ul class="side-nav__archive">
+                  <li><button type="button" data-filter="education-2024">Education Research 2024</button></li>
+                  <li><button type="button" data-filter="education-2025">Education Research 2025</button></li>
+                  <li><button type="button" data-filter="education-2026">Education Research 2026</button></li>
+                </ul>
+              </div>
+            </details>
+            <details class="side-nav__section" id="society-deep-thoughts" open>
+              <summary>Society, Life &amp; Deep Thoughts</summary>
+              <div class="side-nav__content">
+                <p class="side-nav__hint">Subcategories</p>
+                <ul>
+                  <li><button type="button" data-filter="emotional-behavior">Emotional Behavior</button></li>
+                  <li><button type="button" data-filter="relationships">Relationships</button></li>
+                  <li><button type="button" data-filter="cultural-shifts">Cultural Shifts</button></li>
+                  <li><button type="button" data-filter="gen-z-analysis">Gen Z Analysis</button></li>
+                  <li><button type="button" data-filter="modern-work">Modern Work &amp; Lifestyle</button></li>
+                </ul>
+                <p class="side-nav__hint">Example topics</p>
+                <ul>
+                  <li><a href="article-template.html">Material success vs human connection</a></li>
+                  <li><a href="article-template.html">Why Gen Z prioritizes growth over love</a></li>
+                </ul>
+              </div>
+            </details>
+          </nav>
+
+          <div class="tag-cloud" aria-label="Popular tags">
+            <p class="tag-cloud__title">Popular tags</p>
+            <div class="tag-cloud__chips">
+              <button type="button" data-filter="krishna">Krishna</button>
+              <button type="button" data-filter="llm">LLM</button>
+              <button type="button" data-filter="education">Education</button>
+              <button type="button" data-filter="architecture">Architecture</button>
+              <button type="button" data-filter="culture">Culture</button>
+              <button type="button" data-filter="child-psychology">Child Psychology</button>
+            </div>
+          </div>
+        </aside>
+
+        <section class="insights__content" aria-live="polite">
+          <div class="insights__controls">
+            <p><strong>Showing</strong> <span id="insight-count">All entries</span></p>
+            <button class="btn btn--ghost" type="button" data-reset>Reset filters</button>
+          </div>
+          <div class="insight-list">
+            <article class="insight-item" data-tags="llm llms-slms enterprise-architecture year-2025" data-category="Technology &amp; AI">
+              <header>
+                <p class="insight-item__meta">Technology &amp; AI · 2025</p>
+                <h2><a href="article-template.html">Calibrating small language models for regulated enterprises</a></h2>
+              </header>
+              <p>
+                A governance-first approach to building reliable, efficient SLM stacks that blend Azure Foundry with tradition-based
+                design principles.
+              </p>
+              <ul class="insight-item__tags">
+                <li>#LLM</li>
+                <li>#EnterpriseArchitecture</li>
+                <li>#ResponsibleAI</li>
+              </ul>
+            </article>
+
+            <article class="insight-item" data-tags="pega-insights applied-ai enterprise-architecture year-2024" data-category="Technology &amp; AI">
+              <header>
+                <p class="insight-item__meta">Technology &amp; AI · 2024</p>
+                <h2><a href="article-template.html">Pega + AI playbooks for humane automations</a></h2>
+              </header>
+              <p>Design guardrails, human handoffs, and measurement dashboards for AI-assisted customer journeys.</p>
+              <ul class="insight-item__tags">
+                <li>#Pega</li>
+                <li>#AppliedAI</li>
+                <li>#ExperienceDesign</li>
+              </ul>
+            </article>
+
+            <article class="insight-item" data-tags="mahabharata leadership-lessons krishna modern-analogies" data-category="Mythology &amp; Analogies">
+              <header>
+                <p class="insight-item__meta">Mythology &amp; Analogies</p>
+                <h2><a href="article-template.html">If Rama replaced Arjuna in Kurukshetra</a></h2>
+              </header>
+              <p>Decoding discipline, humility, and situational leadership through a cross-epic thought experiment.</p>
+              <ul class="insight-item__tags">
+                <li>#Mahabharata</li>
+                <li>#Leadership</li>
+                <li>#StrategicWisdom</li>
+              </ul>
+            </article>
+
+            <article class="insight-item" data-tags="education education-2024 us-education year-2024" data-category="Education &amp; Research">
+              <header>
+                <p class="insight-item__meta">Education &amp; Research · 2024</p>
+                <h2><a href="article-template.html">US education systems decoded for Indian parents</a></h2>
+              </header>
+              <p>A parent-friendly guide comparing terminology, expectations, and holistic growth from Pre-K to Grade 12.</p>
+              <ul class="insight-item__tags">
+                <li>#Education</li>
+                <li>#Parenting</li>
+                <li>#HybridLearning</li>
+              </ul>
+            </article>
+
+            <article class="insight-item" data-tags="gen-z-analysis culture modern-work year-2024" data-category="Society &amp; Deep Thoughts">
+              <header>
+                <p class="insight-item__meta">Society &amp; Deep Thoughts</p>
+                <h2><a href="article-template.html">Why Gen Z prioritizes growth over love</a></h2>
+              </header>
+              <p>
+                Investigating ambition, belonging, and human connection in the context of modern work, social media, and AI.
+              </p>
+              <ul class="insight-item__tags">
+                <li>#Culture</li>
+                <li>#GenZ</li>
+                <li>#HumanPotential</li>
+              </ul>
+            </article>
+
+            <article class="insight-item" data-tags="anushtan-school pedagogy-research education-2025 year-2025" data-category="Education &amp; Research">
+              <header>
+                <p class="insight-item__meta">Education &amp; Research · 2025</p>
+                <h2><a href="article-template.html">Anushtan holistic school — model, research, vision</a></h2>
+              </header>
+              <p>
+                Bringing together Gurukula-inspired routines, modern pedagogy, and AI learning assistants for conscious schooling.
+              </p>
+              <ul class="insight-item__tags">
+                <li>#Anushtan</li>
+                <li>#HolisticSchooling</li>
+                <li>#AIinEducation</li>
+              </ul>
+            </article>
+
+            <article class="insight-item" data-tags="relationships emotional-behavior culture year-2024" data-category="Society &amp; Deep Thoughts">
+              <header>
+                <p class="insight-item__meta">Society &amp; Deep Thoughts</p>
+                <h2><a href="article-template.html">Material success vs human connection</a></h2>
+              </header>
+              <p>A reflective essay on redefining success metrics in families, teams, and communities.</p>
+              <ul class="insight-item__tags">
+                <li>#Relationships</li>
+                <li>#EmotionalIntelligence</li>
+                <li>#Purpose</li>
+              </ul>
+            </article>
+
+            <article class="insight-item" data-tags="experiments-demos llm architecture year-2026" data-category="Technology &amp; AI">
+              <header>
+                <p class="insight-item__meta">Technology &amp; AI · 2026</p>
+                <h2><a href="article-template.html">Sandbox: Cultural memory graph copilots</a></h2>
+              </header>
+              <p>Prototype for blending Sri Yantra-inspired visualizations with AI-driven knowledge recall systems.</p>
+              <ul class="insight-item__tags">
+                <li>#Experiments</li>
+                <li>#Architecture</li>
+                <li>#FuturesThinking</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <div>
+          <a class="brand brand--small" href="index.html">
+            <span class="brand__mark" aria-hidden="true">◎</span>
+            <span class="brand__title">The Tech Philosophers</span>
+          </a>
+          <p class="footer__tagline">Calm intelligence for a meaningful technological future.</p>
+        </div>
+        <nav aria-label="Footer">
+          <ul class="footer__nav">
+            <li><a href="about.html">About</a></li>
+            <li><a href="insights.html" aria-current="page">Insights</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="podcasts.html">Podcasts</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer__legal">© <span data-year></span> Raju Thoutu · Crafted with clarity and conscience.</p>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
