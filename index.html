@@ -2,451 +2,239 @@
 <html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tech Philosophers &mdash; Exploring the Future of Technology and Ethics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Tech Philosophers — Where Technology Meets Timeless Wisdom</title>
     <meta
       name="description"
-      content="Tech Philosophers is a collective exploring the intersection of technology, humanity, and ethics through conversations, labs, and community events."
+      content="The Tech Philosophers by Raju Thoutu — a premium platform blending AI, technology, mythology, and education research for seekers of clarity."
     />
-    <meta property="og:title" content="Tech Philosophers" />
+    <meta property="og:title" content="The Tech Philosophers" />
     <meta
       property="og:description"
-      content="Exploring the future of technology, ethics, and community through research, storytelling, and immersive gatherings."
+      content="Dashboard hub for AI insights, mythology analogies, education research, and society commentary by Raju Thoutu."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/images/orbit.svg" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Tech Philosophers" />
-    <meta
-      name="twitter:description"
-      content="Weekly insights and experiments guiding technology with humanity at the center."
-    />
-    <meta name="theme-color" content="#5b55ff" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#home">Skip to main content</a>
     <header class="site-header" id="top">
-      <div class="container header-inner">
-        <a class="logo" href="#home">
-          <span aria-hidden="true">&#9678;</span>
-          Tech Philosophers
+      <div class="container header__inner">
+        <a class="brand" href="index.html" aria-label="The Tech Philosophers home">
+          <span class="brand__mark" aria-hidden="true">◎</span>
+          <span class="brand__text">
+            <span class="brand__title">The Tech Philosophers</span>
+            <span class="brand__tagline">Raju Thoutu</span>
+          </span>
         </a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="nav-toggle__line"></span>
-            <span class="nav-toggle__line"></span>
-            <span class="nav-toggle__line"></span>
-          </button>
-          <ul id="primary-menu" class="nav-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#pillars">Pillars</a></li>
-            <li><a href="#podcast">Podcast</a></li>
-            <li><a href="#insights">Insights</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="nav-toggle__line"></span>
+          <span class="nav-toggle__line"></span>
+          <span class="nav-toggle__line"></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary">
+          <ul id="primary-nav" class="site-nav__list">
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="podcasts.html">Podcasts &amp; Videos</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
-        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
-          <svg class="theme-toggle__icon" viewBox="0 0 24 24" role="img" aria-hidden="true">
-            <circle class="theme-toggle__sun" cx="12" cy="12" r="5"></circle>
-            <path
-              class="theme-toggle__moon"
-              d="M21 12.79A9 9 0 0 1 11.21 3 7 7 0 1 0 21 12.79z"
-            ></path>
-          </svg>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Activate dark mode">
+          <span class="sr-only">Toggle theme</span>
+          <span class="theme-toggle__icon" aria-hidden="true"></span>
         </button>
       </div>
     </header>
 
-    <main>
-      <section class="hero" id="home">
-        <div class="container hero__inner">
+    <main id="main-content">
+      <section class="hero">
+        <div class="container hero__grid">
           <div class="hero__content">
-            <p class="eyebrow">Future-forward conversations</p>
-            <h1>Guiding technology with thoughtful philosophy</h1>
-            <p class="hero__lead">
-              We are a collective of technologists, philosophers, and storytellers researching
-              how emerging innovations shape humanity &mdash; and how we can shape them back.
+            <p class="eyebrow">Where Technology Meets Timeless Wisdom</p>
+            <h1>Guidance for thinkers, builders, and parents navigating intelligent futures.</h1>
+            <p class="lead">
+              AI, digital transformation, mythology, education systems, and societal change — simplified in calm, meaningful
+              language by technologist and educator Raju Thoutu.
             </p>
-            <div class="hero__actions">
-              <a class="btn btn--primary" href="#pillars">Explore our pillars</a>
-              <a class="btn btn--ghost" href="#podcast">Listen to the podcast</a>
+            <div class="button-row">
+              <a class="btn btn--primary" href="insights.html">Explore Insights</a>
+              <a class="btn btn--secondary" href="podcasts.html">Watch Podcasts</a>
             </div>
-            <dl class="hero__stats" aria-label="Community statistics">
+            <dl class="hero__metrics" aria-label="Community metrics">
               <div>
-                <dt>Global Members</dt>
-                <dd><span data-count="5800">5,800</span>+</dd>
+                <dt>Insights Published</dt>
+                <dd>320+</dd>
               </div>
               <div>
-                <dt>Research Notes</dt>
-                <dd><span data-count="180">180</span>+</dd>
+                <dt>Podcast &amp; Video Plays</dt>
+                <dd>95K+</dd>
               </div>
               <div>
-                <dt>Episodes Released</dt>
-                <dd><span data-count="74">74</span></dd>
+                <dt>Newsletter Readers</dt>
+                <dd>18K+</dd>
               </div>
             </dl>
           </div>
-          <figure class="hero__visual" aria-hidden="true">
-            <img src="assets/images/orbit.svg" alt="" />
-          </figure>
-        </div>
-      </section>
-
-      <section class="pillars" id="pillars">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Our pillars</p>
-            <h2>Three lenses for asking better questions about technology</h2>
+          <aside class="founder-card" aria-label="About Raju Thoutu">
+            <div class="founder-card__avatar" aria-hidden="true">RT</div>
+            <h2>Raju Thoutu</h2>
+            <p class="founder-card__role">Technologist · Architect · Educator · Storyteller</p>
             <p>
-              The Tech Philosophers framework blends critical analysis, creative experimentation,
-              and grassroots community insight. Choose a pillar to explore how we work.
+              Architecting enterprise systems, researching AI adoption, and translating Bharatiya wisdom into modern, actionable
+              ideas.
             </p>
-          </div>
-          <div class="pillars__layout">
-            <div class="pillars__tabs" role="tablist" aria-label="Pillars">
-              <button class="pillars__tab is-active" role="tab" aria-selected="true" aria-controls="pillar-ethics" id="tab-ethics">
-                Ethics Lab
-              </button>
-              <button class="pillars__tab" role="tab" aria-selected="false" aria-controls="pillar-futures" id="tab-futures">
-                Futures Studio
-              </button>
-              <button class="pillars__tab" role="tab" aria-selected="false" aria-controls="pillar-voices" id="tab-voices">
-                Community Voices
-              </button>
-            </div>
-            <div class="pillars__panels">
-              <article class="pillars__panel is-active" id="pillar-ethics" role="tabpanel" tabindex="0" aria-labelledby="tab-ethics">
-                <h3>Ethics Lab</h3>
-                <p>
-                  We synthesize philosophy, law, and lived experience to prototype ethical guardrails
-                  for emerging technologies. Think practical frameworks, open-source guidelines, and
-                  scenario planning that keeps humans at the center.
-                </p>
-                <ul class="pillars__list">
-                  <li>Publish thought experiments to stress-test new products.</li>
-                  <li>Partner with startups to co-create responsibility playbooks.</li>
-                  <li>Host monthly roundtables with ethicists and policy makers.</li>
-                </ul>
-              </article>
-              <article class="pillars__panel" id="pillar-futures" role="tabpanel" tabindex="-1" aria-labelledby="tab-futures">
-                <h3>Futures Studio</h3>
-                <p>
-                  Our studio turns speculative ideas into tangible prototypes. We run design sprints,
-                  rapid experiments, and open labs to imagine how human values can inform intelligent systems.
-                </p>
-                <ul class="pillars__list">
-                  <li>Create immersive experiences that explore alternative futures.</li>
-                  <li>Publish quarterly field guides on emerging technologies.</li>
-                  <li>Mentor founders building humane tools and civic tech.</li>
-                </ul>
-              </article>
-              <article class="pillars__panel" id="pillar-voices" role="tabpanel" tabindex="-1" aria-labelledby="tab-voices">
-                <h3>Community Voices</h3>
-                <p>
-                  We highlight artists, educators, and activists shaping our tech culture. Through editorial features
-                  and open salons we build inclusive spaces for nuance and honest debate.
-                </p>
-                <ul class="pillars__list">
-                  <li>Curate multimedia stories amplifying global perspectives.</li>
-                  <li>Hold neighborhood listening tours and youth workshops.</li>
-                  <li>Maintain a community knowledge base that anyone can remix.</li>
-                </ul>
-              </article>
-            </div>
-          </div>
+            <a class="founder-card__link" href="about.html">Read the full story →</a>
+          </aside>
         </div>
       </section>
 
-      <section class="podcast" id="podcast">
+      <section class="section section--surface">
         <div class="container">
-          <div class="section-heading section-heading--center">
-            <p class="eyebrow">Listen in</p>
-            <h2>The Tech Philosophers podcast</h2>
-            <p>
-              Weekly dialogues with builders, researchers, and dreamers exploring how we can align technology
-              with the flourishing of people and planet.
-            </p>
+          <div class="section__header">
+            <h2>Navigate the ecosystem</h2>
+            <p>Modular destinations designed like a dashboard for quick exploration.</p>
           </div>
-          <div class="podcast__grid">
-            <article class="podcast__card">
-              <div class="podcast__meta">
-                <span class="podcast__tag">New</span>
-                <span>Episode 74</span>
-              </div>
-              <h3>Designing AI tools that elevate human creativity</h3>
-              <p>
-                Conversation with creative technologist Aisha Bryant about crafting co-creative systems and the
-                rituals that keep teams accountable.
-              </p>
-              <a class="podcast__link" href="#">Play episode</a>
-            </article>
-            <article class="podcast__card">
-              <div class="podcast__meta">
-                <span class="podcast__tag">Deep dive</span>
-                <span>Episode 73</span>
-              </div>
-              <h3>Repairing digital public squares</h3>
-              <p>
-                Civic technologist Nikhil Iyer joins to unpack the infrastructure required for trustworthy information
-                ecosystems and community-first platforms.
-              </p>
-              <a class="podcast__link" href="#">Play episode</a>
-            </article>
-            <article class="podcast__card">
-              <div class="podcast__meta">
-                <span class="podcast__tag">Field note</span>
-                <span>Episode 72</span>
-              </div>
-              <h3>When hardware meets the commons</h3>
-              <p>
-                A dispatch from our field research in Nairobi documenting makerspaces stewarding climate resilient hardware
-                and open knowledge.
-              </p>
-              <a class="podcast__link" href="#">Play episode</a>
-            </article>
+          <div class="quick-nav">
+            <a class="quick-nav__card" href="insights.html#technology-ai">
+              <span class="quick-nav__label">AI &amp; Emerging Tech</span>
+              <span class="quick-nav__meta">Frameworks, enterprise architecture, applied AI toolkits.</span>
+            </a>
+            <a class="quick-nav__card" href="insights.html#mythology-analogies">
+              <span class="quick-nav__label">Mythology &amp; Analogies</span>
+              <span class="quick-nav__meta">Mahabharata, Ramayana, Gita and modern leadership parallels.</span>
+            </a>
+            <a class="quick-nav__card" href="insights.html#education-research">
+              <span class="quick-nav__label">Education &amp; Research</span>
+              <span class="quick-nav__meta">Hybrid learning models, child psychology, school design.</span>
+            </a>
+            <a class="quick-nav__card" href="insights.html#society-deep-thoughts">
+              <span class="quick-nav__label">Society &amp; Deep Thoughts</span>
+              <span class="quick-nav__meta">Culture, work, emotional intelligence, conscious living.</span>
+            </a>
+            <a class="quick-nav__card" href="podcasts.html">
+              <span class="quick-nav__label">Podcasts &amp; Videos</span>
+              <span class="quick-nav__meta">Long-form conversations, YouTube playlists, short reels.</span>
+            </a>
+            <a class="quick-nav__card" href="projects.html">
+              <span class="quick-nav__label">My Projects</span>
+              <span class="quick-nav__meta">AI experiments, Anushtan School concept, enterprise case studies.</span>
+            </a>
           </div>
         </div>
       </section>
 
-      <section class="insights" id="insights">
+      <section class="signature-quote">
         <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Latest insights</p>
-            <h2>Research, essays, and tools from the Tech Philosophers team</h2>
-            <p>Filter by theme to see how our thinkers are probing the edges of what technology can become.</p>
-          </div>
-          <div class="insights__filters" role="toolbar" aria-label="Filter insights">
-            <button class="insights__filter is-active" data-filter="all">All</button>
-            <button class="insights__filter" data-filter="ethics">Ethics</button>
-            <button class="insights__filter" data-filter="policy">Policy</button>
-            <button class="insights__filter" data-filter="design">Design</button>
-            <button class="insights__filter" data-filter="community">Community</button>
-          </div>
-          <div class="insights__grid">
-            <article class="insight-card" data-category="ethics policy">
-              <h3>Six questions to ask before shipping autonomous systems</h3>
-              <p>
-                A framework to interrogate alignment, consent, and resilience in AI deployments, drawing on real-world pilots
-                from health care and public transit.
-              </p>
-              <a href="#" class="insight-card__link">Read the field guide</a>
-            </article>
-            <article class="insight-card" data-category="design community">
-              <h3>Listening sessions as a design superpower</h3>
-              <p>
-                Techniques for embedding community listening into product roadmaps, inspired by our workshops in Manila and Mexico City.
-              </p>
-              <a href="#" class="insight-card__link">View the workshop toolkit</a>
-            </article>
-            <article class="insight-card" data-category="policy ethics">
-              <h3>Regenerative governance for digital infrastructure</h3>
-              <p>
-                Exploring how public interest technology can cultivate ecosystems that replenish civic trust and planetary health.
-              </p>
-              <a href="#" class="insight-card__link">Dive into the essay</a>
-            </article>
-            <article class="insight-card" data-category="design ethics">
-              <h3>Reclaiming agency with ritualized tech breaks</h3>
-              <p>
-                Research notes on how purposeful time away from screens recalibrates our relationship with automation and productivity.
-              </p>
-              <a href="#" class="insight-card__link">Read the research notes</a>
-            </article>
-            <article class="insight-card" data-category="community">
-              <h3>The global salons shaping humane innovation</h3>
-              <p>
-                Highlights from our community gatherings celebrating intergenerational wisdom and cross-cultural collaboration.
-              </p>
-              <a href="#" class="insight-card__link">Explore the recap</a>
-            </article>
-            <article class="insight-card" data-category="policy design">
-              <h3>Policy playbooks for algorithmic accountability</h3>
-              <p>
-                Actionable templates for city leaders crafting accountable procurement and auditing practices for AI systems.
-              </p>
-              <a href="#" class="insight-card__link">Download the playbook</a>
-            </article>
-          </div>
+          <blockquote>
+            “Knowledge becomes wisdom only when it transforms your life.”
+            <cite>— The Tech Philosophers</cite>
+          </blockquote>
         </div>
       </section>
 
-      <section class="events" id="events">
+      <section class="section" aria-labelledby="recent-posts">
         <div class="container">
-          <div class="events__inner">
-            <div class="events__content">
-              <p class="eyebrow">Gatherings</p>
-              <h2>Labs, salons, and residencies</h2>
-              <p>
-                Our global community convenes regularly to test ideas and grow collective wisdom. Join an upcoming event
-                or pitch a collaboration.
-              </p>
-              <ul class="events__list">
-                <li>
-                  <strong>June 14</strong> &mdash; "Ethics in the Age of Generative Media" salon, hybrid from Berlin.
-                </li>
-                <li>
-                  <strong>July 02</strong> &mdash; Community residency applications open for systems thinking cohort.
-                </li>
-                <li>
-                  <strong>August 21</strong> &mdash; Futures Studio showcase featuring speculative prototypes.
-                </li>
-              </ul>
-              <a class="btn btn--primary" href="#contact">Request an invite</a>
+          <div class="section__header">
+            <div>
+              <h2 id="recent-posts">Recent insights</h2>
+              <p>Fresh thinking across technology, mythology, education, and society.</p>
             </div>
-            <div class="events__card">
-              <h3>Host with Tech Philosophers</h3>
-              <p>
-                Bring a Tech Philosophers lab to your city, campus, or company. We partner with organizations ready to
-                experiment with community-led innovation.
-              </p>
-              <ul class="events__card-list">
-                <li>Curriculum co-design and facilitation</li>
-                <li>Hybrid event production</li>
-                <li>Documentation and storytelling support</li>
-              </ul>
-              <a class="events__card-link" href="#contact">Start the conversation</a>
-            </div>
+            <a class="section__cta" href="insights.html">View all insights</a>
+          </div>
+          <div class="card-grid">
+            <article class="content-card" data-category="technology-ai" data-tags="llm architecture">
+              <p class="content-card__eyebrow">Technology &amp; AI</p>
+              <h3>Designing enterprise copilots that respect human judgment</h3>
+              <p>Blueprint for blending low-code platforms with trusted guardrails and Bharatiya ethics.</p>
+              <a class="content-card__link" href="article-template.html">Read article</a>
+            </article>
+            <article class="content-card" data-category="mythology-analogies" data-tags="gita leadership">
+              <p class="content-card__eyebrow">Mythology &amp; Analogies</p>
+              <h3>If Rama replaced Arjuna in Kurukshetra</h3>
+              <p>A reflective scenario on duty, restraint, and the science of timely intervention.</p>
+              <a class="content-card__link" href="article-template.html">Read article</a>
+            </article>
+            <article class="content-card" data-category="education-research" data-tags="education psychology">
+              <p class="content-card__eyebrow">Education &amp; Research</p>
+              <h3>Hybrid learning rhythms for holistic schools</h3>
+              <p>Integrating Montessori, CBSE, and Gurukula principles into a future-ready timetable.</p>
+              <a class="content-card__link" href="article-template.html">Read article</a>
+            </article>
+            <article class="content-card" data-category="society-deep-thoughts" data-tags="culture">
+              <p class="content-card__eyebrow">Society &amp; Deep Thoughts</p>
+              <h3>Material success vs. human connection in the AI era</h3>
+              <p>Why purposeful relationships become the competitive advantage for Gen Z leaders.</p>
+              <a class="content-card__link" href="article-template.html">Read article</a>
+            </article>
+            <article class="content-card" data-category="technology-ai" data-tags="pega demo">
+              <p class="content-card__eyebrow">Technology &amp; AI</p>
+              <h3>Pega + Azure AI: Orchestrating value-first automations</h3>
+              <p>A system architecture walkthrough with design notes, APIs, and measurement models.</p>
+              <a class="content-card__link" href="article-template.html">Read article</a>
+            </article>
+            <article class="content-card" data-category="mythology-analogies" data-tags="krishna leadership">
+              <p class="content-card__eyebrow">Mythology &amp; Analogies</p>
+              <h3>Why Krishna intervened before Kamsa’s downfall</h3>
+              <p>Exploring risk sensing, moral calculus, and strategic empathy for modern leaders.</p>
+              <a class="content-card__link" href="article-template.html">Read article</a>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="newsletter" id="contact">
-        <div class="container newsletter__inner">
-          <div class="newsletter__content">
-            <p class="eyebrow">Stay in orbit</p>
-            <h2>Subscribe and collaborate</h2>
-            <p>
-              Get research highlights, new episode drops, and invitations to private gatherings directly in your inbox.
-              Share a note if you're keen to collaborate.
-            </p>
-            <div class="newsletter__badges" aria-label="Highlights">
-              <span>Monthly digest</span>
-              <span>Early access to tools</span>
-              <span>Community AMAs</span>
-            </div>
+      <section class="section section--surface" aria-labelledby="newsletter">
+        <div class="container newsletter">
+          <div>
+            <h2 id="newsletter">Think Better. Live Better. Build Better.</h2>
+            <p>Weekly email reflections blending practical technology choices with ancient Indian wisdom.</p>
           </div>
-          <form class="newsletter__form" aria-label="Newsletter sign-up">
-            <label class="newsletter__label" for="newsletter-email">Email</label>
-            <input id="newsletter-email" type="email" name="email" placeholder="you@example.com" required />
-            <label class="newsletter__label" for="newsletter-message">Message (optional)</label>
-            <textarea id="newsletter-message" name="message" rows="4" placeholder="Tell us how you want to collaborate"></textarea>
-            <button class="btn btn--primary" type="submit">Join the orbit</button>
-            <p class="newsletter__feedback" role="status" aria-live="polite"></p>
-            <p class="newsletter__smallprint">We respect your time and attention. Unsubscribe anytime.</p>
+          <form class="newsletter__form" action="#" method="post">
+            <label class="sr-only" for="newsletter-email">Email address</label>
+            <input
+              class="newsletter__input"
+              type="email"
+              id="newsletter-email"
+              name="email"
+              placeholder="name@email.com"
+              required
+            />
+            <button class="btn btn--primary" type="submit">Join the newsletter</button>
+            <p class="newsletter__feedback" role="status"></p>
           </form>
-        </div>
-      </section>
-
-      <section class="faq" id="faq">
-        <div class="container">
-          <div class="section-heading section-heading--center">
-            <p class="eyebrow">FAQs</p>
-            <h2>Answers to frequent curiosities</h2>
-            <p>
-              Something still unclear? Browse these highlights or reach out. We love thoughtful questions and dialogue.
-            </p>
-          </div>
-          <div class="faq__list">
-            <article class="faq__item">
-              <h3>
-                <button aria-expanded="false">
-                  How can I contribute to Tech Philosophers research?
-                  <span class="faq__icon" aria-hidden="true"></span>
-                </button>
-              </h3>
-              <div class="faq__body">
-                <p>
-                  We welcome collaborators across disciplines. Share your interests through the form above and our team will
-                  connect you with the right lab or project steward.
-                </p>
-              </div>
-            </article>
-            <article class="faq__item">
-              <h3>
-                <button aria-expanded="false">
-                  Do you offer speaking or facilitation engagements?
-                  <span class="faq__icon" aria-hidden="true"></span>
-                </button>
-              </h3>
-              <div class="faq__body">
-                <p>
-                  Yes! From keynotes on humane innovation to participatory workshops, we tailor experiences for conferences,
-                  universities, and community spaces.
-                </p>
-              </div>
-            </article>
-            <article class="faq__item">
-              <h3>
-                <button aria-expanded="false">
-                  Can I sponsor the podcast or a community residency?
-                  <span class="faq__icon" aria-hidden="true"></span>
-                </button>
-              </h3>
-              <div class="faq__body">
-                <p>
-                  Sponsorships keep our work accessible. Send us a note with your goals and we'll explore ethical partnerships
-                  that align with our values.
-                </p>
-              </div>
-            </article>
-          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container site-footer__inner">
-        <div class="site-footer__brand">
-          <a class="logo" href="#top">
-            <span aria-hidden="true">&#9678;</span>
-            Tech Philosophers
+      <div class="container footer__grid">
+        <div>
+          <a class="brand brand--small" href="index.html">
+            <span class="brand__mark" aria-hidden="true">◎</span>
+            <span class="brand__title">The Tech Philosophers</span>
           </a>
-          <p>
-            Charting technology's impact with curiosity, compassion, and courage. Join us as we build futures where everyone can thrive.
-          </p>
+          <p class="footer__tagline">Calm intelligence for a meaningful technological future.</p>
         </div>
-        <div class="site-footer__links">
-          <div>
-            <h3>Explore</h3>
-            <ul>
-              <li><a href="#pillars">Pillars</a></li>
-              <li><a href="#podcast">Podcast</a></li>
-              <li><a href="#insights">Insights</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3>Connect</h3>
-            <ul>
-              <li><a href="mailto:hello@techphilosophers.com">Email</a></li>
-              <li><a href="#events">Events</a></li>
-              <li><a href="#faq">FAQs</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3>Social</h3>
-            <ul>
-              <li><a href="#">Mastodon</a></li>
-              <li><a href="#">YouTube</a></li>
-              <li><a href="#">Substack</a></li>
-            </ul>
-          </div>
-        </div>
+        <nav aria-label="Footer">
+          <ul class="footer__nav">
+            <li><a href="about.html">About</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="podcasts.html">Podcasts</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="site-footer__bottom">
-        <p>&copy; <span id="copyright-year"></span> Tech Philosophers. Crafted with care.</p>
-        <a href="#top" class="site-footer__top">Back to top</a>
-      </div>
+      <p class="footer__legal">© <span data-year></span> Raju Thoutu · Crafted with clarity and conscience.</p>
     </footer>
 
     <script src="assets/js/main.js" defer></script>

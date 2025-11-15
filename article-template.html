@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Insight Template — The Tech Philosophers</title>
+    <meta name="description" content="Template for The Tech Philosophers articles with modular table of contents and metadata." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container header__inner">
+        <a class="brand" href="index.html" aria-label="The Tech Philosophers home">
+          <span class="brand__mark" aria-hidden="true">◎</span>
+          <span class="brand__text">
+            <span class="brand__title">The Tech Philosophers</span>
+            <span class="brand__tagline">Raju Thoutu</span>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="nav-toggle__line"></span>
+          <span class="nav-toggle__line"></span>
+          <span class="nav-toggle__line"></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary">
+          <ul id="primary-nav" class="site-nav__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="podcasts.html">Podcasts &amp; Videos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Activate dark mode">
+          <span class="sr-only">Toggle theme</span>
+          <span class="theme-toggle__icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content" class="page article">
+      <article class="article__layout">
+        <header class="article__header">
+          <p class="article__category">Technology &amp; AI Insights</p>
+          <h1>Sample article title placed here for layout preview</h1>
+          <p class="article__meta">Published June 12, 2025 · Tags: <a href="#">LLM</a>, <a href="#">Enterprise Architecture</a></p>
+        </header>
+
+        <aside class="article__toc" aria-label="Table of contents">
+          <p class="article__toc-title">Table of contents</p>
+          <ol>
+            <li><a href="#section-1">Context &amp; question</a></li>
+            <li><a href="#section-2">Framework</a></li>
+            <li><a href="#section-3">Case application</a></li>
+            <li><a href="#section-4">Reflection prompts</a></li>
+          </ol>
+        </aside>
+
+        <div class="article__body">
+          <section id="section-1">
+            <h2>Context &amp; question</h2>
+            <p>
+              Use this space to outline why the topic matters. Introduce the philosophical angle, the technological scenario, and
+              the audience pain point in simple English.
+            </p>
+          </section>
+          <section id="section-2">
+            <h2>Framework</h2>
+            <p>
+              Present the guiding model or mental map. Visuals such as neural networks or Sri Yantra line art can be embedded here
+              as SVGs or background graphics.
+            </p>
+            <ul>
+              <li>Principle 1 — Technology with conscience.</li>
+              <li>Principle 2 — Education that nurtures curiosity.</li>
+              <li>Principle 3 — Society with compassionate leadership.</li>
+            </ul>
+          </section>
+          <section id="section-3">
+            <h2>Case application</h2>
+            <p>
+              Detail how the framework applies to a real project. Reference AI tools, mythology analogies, or education research as
+              needed.
+            </p>
+            <blockquote>
+              “Every system we design should make it easier for people to choose wisdom over speed.”
+            </blockquote>
+          </section>
+          <section id="section-4">
+            <h2>Reflection prompts</h2>
+            <p>Close with actions, journaling questions, or discussion prompts.</p>
+            <ol>
+              <li>Where does your team need more clarity?</li>
+              <li>How will you measure transformation beyond metrics?</li>
+              <li>What wisdom tradition can help answer your next decision?</li>
+            </ol>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <div>
+          <a class="brand brand--small" href="index.html">
+            <span class="brand__mark" aria-hidden="true">◎</span>
+            <span class="brand__title">The Tech Philosophers</span>
+          </a>
+          <p class="footer__tagline">Calm intelligence for a meaningful technological future.</p>
+        </div>
+        <nav aria-label="Footer">
+          <ul class="footer__nav">
+            <li><a href="about.html">About</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="podcasts.html">Podcasts</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer__legal">© <span data-year></span> Raju Thoutu · Crafted with clarity and conscience.</p>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
