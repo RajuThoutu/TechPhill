@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights | The Tech Philosophers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        /* Blog Specific Layout */
+        .blog-layout {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .sidebar-content {
+            position: sticky;
+            top: 100px;
+        }
+
+        .category-list {
+            list-style: none;
+        }
+
+        .category-list li {
+            margin-bottom: 1rem;
+        }
+
+        .category-list summary {
+            font-weight: 600;
+            cursor: pointer;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .category-list ul {
+            list-style: none;
+            padding-left: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .category-list a {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            display: block;
+            padding: 0.25rem 0;
+        }
+
+        .category-list a:hover {
+            color: var(--accent-primary);
+        }
+
+        @media (max-width: 768px) {
+            .blog-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar-content {
+                position: static;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <section style="padding-top: 2rem;">
+            <div class="container">
+                <h1 class="section-title" style="text-align: left;">Insights</h1>
+                <p style="color: var(--text-secondary);">Exploring the intersection of technology, philosophy,
+                    and life.
+                </p>
+
+                <div style="margin-bottom: 2rem;">
+                    <a href="../index.html" class="btn-outline" style="font-size: 0.9rem;">&larr; Back to
+                        Home</a>
+                </div>
+
+                <div class="blog-layout">
+                    <!-- Sidebar -->
+                    <aside id="blog-sidebar-container"></aside>
+
+                    <!-- Content -->
+                    <div class="blog-content">
+                        <div class="grid-2" id="blog-grid">
+                            <article class="card blog-item" data-category="tech llms enterprise">
+                                <span style="font-size: 0.8rem; color: var(--accent-primary); font-weight: 600;">AI
+                                    & Tech</span>
+                                <h3 style="margin: 0.5rem 0;">From Pega logs to language models</h3>
+                                <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                                    Tracing the evolution of enterprise automation to generative AI.</p>
+                                <a href="template.html" class="btn-outline" style="font-size: 0.8rem;">Read
+                                    Article</a>
+                            </article>
+                            <article class="card blog-item" data-category="mythology ramayana analogies">
+                                <span
+                                    style="font-size: 0.8rem; color: var(--accent-primary); font-weight: 600;">Mythology</span>
+                                <h3 style="margin: 0.5rem 0;">If Rama stood where Arjuna stood</h3>
+                                <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                                    A philosophical experiment comparing two great archetypes of Dharma.</p>
+                                <a href="template.html" class="btn-outline" style="font-size: 0.8rem;">Read
+                                    Article</a>
+                            </article>
+                            <article class="card blog-item" data-category="education models development">
+                                <span
+                                    style="font-size: 0.8rem; color: var(--accent-primary); font-weight: 600;">Education</span>
+                                <h3 style="margin: 0.5rem 0;">US Pre-K, Bharatiya roots</h3>
+                                <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                                    Bridging early childhood education models for the modern diaspora.</p>
+                                <a href="template.html" class="btn-outline" style="font-size: 0.8rem;">Read
+                                    Article</a>
+                            </article>
+                            <article class="card blog-item" data-category="society genz culture">
+                                <span
+                                    style="font-size: 0.8rem; color: var(--accent-primary); font-weight: 600;">Society</span>
+                                <h3 style="margin: 0.5rem 0;">Gen Z shifting from romance to lifestyle</h3>
+                                <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                                    Analyzing modern relationship dynamics through a sociological lens.</p>
+                                <a href="template.html" class="btn-outline" style="font-size: 0.8rem;">Read
+                                    Article</a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+    <script src="../js/components.js"></script>
+    <script>
+        // Blog Filtering Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            // Wait for sidebar to load
+            setTimeout(() => {
+                const filterLinks = document.querySelectorAll('.filter-link');
+                const blogItems = document.querySelectorAll('.blog-item');
+
+                filterLinks.forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const filter = e.target.getAttribute('data-filter');
+
+                        blogItems.forEach(item => {
+                            const categories = item.getAttribute('data-category');
+                            if (filter === 'all' || categories.includes(filter)) {
+                                item.style.display = 'block';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            }, 100); // Small delay to ensure components.js has injected the sidebar
+        });
+    </script>
+</body>
+
+</html>

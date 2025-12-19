@@ -1,0 +1,29 @@
+{
+    "Comment": "Point to CloudFront",
+    "Changes": [
+        {
+            "Action": "UPSERT",
+            "ResourceRecordSet": {
+                "Name": "thetechphilosophers.com.",
+                "Type": "A",
+                "AliasTarget": {
+                    "HostedZoneId": "Z2FDTNDATAQYW2",
+                    "DNSName": "deqz0f4ozwb9b.cloudfront.net.",
+                    "EvaluateTargetHealth": false
+                }
+            }
+        },
+        {
+            "Action": "UPSERT",
+            "ResourceRecordSet": {
+                "Name": "www.thetechphilosophers.com.",
+                "Type": "A",
+                "AliasTarget": {
+                    "HostedZoneId": "Z2FDTNDATAQYW2",
+                    "DNSName": "deqz0f4ozwb9b.cloudfront.net.",
+                    "EvaluateTargetHealth": false
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "Comment": "ACM DNS Validation",
+    "Changes": [
+        {
+            "Action": "UPSERT",
+            "ResourceRecordSet": {
+                "Name": "_318e9a31defc3ea2d753095a7cb225e8.thetechphilosophers.com.",
+                "Type": "CNAME",
+                "TTL": 300,
+                "ResourceRecords": [
+                    {
+                        "Value": "_d79e7f2f6edf7a09d44d3d84e59e5eee.jkddzztszm.acm-validations.aws."
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "UPSERT",
+            "ResourceRecordSet": {
+                "Name": "_3ee02a533d768c0926fa8b6199989bab.www.thetechphilosophers.com.",
+                "Type": "CNAME",
+                "TTL": 300,
+                "ResourceRecords": [
+                    {
+                        "Value": "_1082d7547f96a6df6b7f1ae12a439422.jkddzztszm.acm-validations.aws."
+                    }
+                ]
+            }
+        }
+    ]
+}

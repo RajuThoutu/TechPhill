@@ -1,0 +1,69 @@
+{
+    "CallerReference": "ref-thetechphilosophers-1",
+    "Aliases": {
+        "Quantity": 2,
+        "Items": [
+            "thetechphilosophers.com",
+            "www.thetechphilosophers.com"
+        ]
+    },
+    "DefaultRootObject": "index.html",
+    "Origins": {
+        "Quantity": 1,
+        "Items": [
+            {
+                "Id": "S3-Website-thetechphilosophers.com",
+                "DomainName": "thetechphilosophers.com.s3-website-us-east-1.amazonaws.com",
+                "CustomOriginConfig": {
+                    "HTTPPort": 80,
+                    "HTTPSPort": 443,
+                    "OriginProtocolPolicy": "http-only",
+                    "OriginSslProtocols": {
+                        "Quantity": 1,
+                        "Items": [
+                            "TLSv1.2"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    "DefaultCacheBehavior": {
+        "TargetOriginId": "S3-Website-thetechphilosophers.com",
+        "ViewerProtocolPolicy": "redirect-to-https",
+        "AllowedMethods": {
+            "Quantity": 2,
+            "Items": [
+                "HEAD",
+                "GET"
+            ],
+            "CachedMethods": {
+                "Quantity": 2,
+                "Items": [
+                    "HEAD",
+                    "GET"
+                ]
+            }
+        },
+        "ForwardedValues": {
+            "QueryString": false,
+            "Cookies": {
+                "Forward": "none"
+            }
+        },
+        "MinTTL": 0,
+        "DefaultTTL": 86400,
+        "MaxTTL": 31536000,
+        "Compress": true
+    },
+    "CacheBehaviors": {
+        "Quantity": 0
+    },
+    "ViewerCertificate": {
+        "ACMCertificateArn": "arn:aws:acm:us-east-1:009404099139:certificate/cb50383d-029a-4462-b1ff-c1eb203d5551",
+        "SSLSupportMethod": "sni-only",
+        "MinimumProtocolVersion": "TLSv1.2_2021"
+    },
+    "Comment": "Distribution for thetechphilosophers.com",
+    "Enabled": true
+}

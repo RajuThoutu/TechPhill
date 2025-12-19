@@ -1,0 +1,27 @@
+{
+    "featured": {
+        "title": "Featured: The Future of AI and Humanity",
+        "description": "An in-depth discussion on how AI will shape our future society.",
+        "youtubeId": "dQw4w9WgXcQ"
+    },
+    "playlists": [
+        {
+            "id": "tech",
+            "title": "Tech & AI",
+            "description": "Deep dives into technology.",
+            "thumbnail": "Bot"
+        },
+        {
+            "id": "mythology",
+            "title": "Mythology & Wisdom",
+            "description": "Stories from the epics.",
+            "thumbnail": "BookOpen"
+        },
+        {
+            "id": "education",
+            "title": "Education & Parenting",
+            "description": "Insights for the next generation.",
+            "thumbnail": "GraduationCap"
+        }
+    ]
+}
