@@ -21,10 +21,10 @@ const Footer = () => {
                         <div>
                             <h4 className="font-semibold mb-4 text-[var(--text-primary)]">Explore</h4>
                             <ul className="flex flex-col gap-3 text-sm text-[var(--text-secondary)]">
+                                <li><Link href="/about" className="hover:text-[var(--accent-primary)] transition-colors">About</Link></li>
                                 <li><Link href="/blog" className="hover:text-[var(--accent-primary)] transition-colors">Insights</Link></li>
                                 <li><Link href="/projects" className="hover:text-[var(--accent-primary)] transition-colors">Projects</Link></li>
                                 <li><Link href="/podcasts" className="hover:text-[var(--accent-primary)] transition-colors">Podcasts</Link></li>
-                                <li><Link href="/services" className="hover:text-[var(--accent-primary)] transition-colors">Services</Link></li>
                             </ul>
                         </div>
 

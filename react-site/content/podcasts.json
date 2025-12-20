@@ -1,27 +1,44 @@
 {
     "featured": {
-        "title": "Featured: The Future of AI and Humanity",
-        "description": "An in-depth discussion on how AI will shape our future society.",
-        "youtubeId": "dQw4w9WgXcQ"
+        "title": "Designing AI with timeless wisdom",
+        "description": "Raju shares frameworks for balancing automation with ethics, drawing from Vedic literature, enterprise case studies, and education research.",
+        "youtubeId": "DyDfgMOUjCI"
     },
     "playlists": [
         {
             "id": "tech",
             "title": "Tech & AI",
-            "description": "Deep dives into technology.",
-            "thumbnail": "Bot"
+            "description": "Deep dives into LLMs, architecture, and digital transformation.",
+            "thumbnail": "Bot",
+            "playlistId": "PL8dPuuaLjXtMczXZUmjbNkiX0A6Jd4cVX"
         },
         {
             "id": "mythology",
             "title": "Mythology & Wisdom",
-            "description": "Stories from the epics.",
-            "thumbnail": "BookOpen"
+            "description": "Dialogues translating epics into modern metaphors for leadership and parenting.",
+            "thumbnail": "BookOpen",
+            "playlistId": "_b2KXgB5m4c"
+        },
+        {
+            "id": "society",
+            "title": "Society & Deep Thoughts",
+            "description": "Culture, work, and emotional wellbeing in an AI-driven world.",
+            "thumbnail": "Globe",
+            "playlistId": "PL55713C70BA91BD6E"
         },
         {
             "id": "education",
             "title": "Education & Parenting",
-            "description": "Insights for the next generation.",
-            "thumbnail": "GraduationCap"
+            "description": "Hybrid learning models, pedagogy research, and child psychology conversations.",
+            "thumbnail": "GraduationCap",
+            "playlistId": "PL8dPuuaLjXtOeEc9ME62zTfqc0hY0Dq2o"
+        },
+        {
+            "id": "shorts",
+            "title": "Shorts & Reels",
+            "description": "60-second insights, bilingual reflections, and event highlights.",
+            "thumbnail": "Play",
+            "playlistId": "_OBlgSz8sSM"
         }
     ]
 }

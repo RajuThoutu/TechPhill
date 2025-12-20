@@ -1,0 +1,1226 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20251219163128
+Username: THOUTU\thout
+RunAs User: THOUTU\thout
+Configuration Name: 
+Machine: THOUTU (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\thout\AppData\Local\Programs\Antigravity\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 27744
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is transcript.txt
+
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cd 'c:\Users\thout\.gemini\antigravity\scratch\tech-philosophers'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cmd /c "set COLUMNS=120 && set LINES=40 && set GH_FORCE_TTY=1 && echo Y | ""C:\Program Files\GitHub CLI\gh.exe"" auth login --hostname github.com --git-protocol https --web > auth_cols.txt 2>&1"
+ntigravity\scratch\tech-philosop
+hers> cmd /c "set COLUMNS=120 &&
+ set LINES=40 && set GH_FORCE_TT
+Y=1 && echo Y | ""C:\Program Fil
+es\GitHub CLI\gh.exe"" auth logi
+n --hostname github.com --git-pr
+otocol https --web > auth_cols.t
+xt 2>&1"
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cd 'c:\Users\thout\.gemini\antigravity\scratch\tech-philosophers'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>Start-Process powershell -ArgumentList '-NoExit', '-Command', '& "C:\Program Files\GitHub CLI\gh.exe" auth login -w'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cd 'c:\Users\thout\.gemini\antigravity\scratch\tech-philosophers'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>& "C:\Program Files\GitHub CLI\gh.exe" auth status
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cd 'c:\Users\thout\.gemini\antigravity\scratch\tech-philosophers'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>& "C:\Program Files\Git\cmd\git.exe" fetch origin
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cd 'c:\Users\thout\.gemini\antigravity\scratch\tech-philosophers'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>& "C:\Program Files\Git\cmd\git.exe" push origin origin/main:refs/heads/v1-base
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cd 'c:\Users\thout\.gemini\antigravity\scratch\tech-philosophers'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>& "C:\Program Files\Git\cmd\git.exe" checkout -b v3-hybrid
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cd 'c:\Users\thout\.gemini\antigravity\scratch\tech-philosophers'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>& "C:\Program Files\Git\cmd\git.exe" ls-tree -r origin/main
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cd 'c:\Users\thout\.gemini\antigravity\scratch\tech-philosophers'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>& "C:\Program Files\Git\cmd\git.exe" ls-tree -r --name-only origin/main
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cd 'c:\Users\thout\.gemini\antigravity\scratch\tech-philosophers'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>& "C:\Program Files\Git\cmd\git.exe" show origin/main:index.html > temp_v1_index.html
+>> ParameterBinding(Out-File): name="InputObject"; value="<!DOCTYPE html>"
+>> ParameterBinding(Out-File): name="InputObject"; value="<html lang="en" data-theme="light">"
+>> ParameterBinding(Out-File): name="InputObject"; value="  <head>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <meta charset="UTF-8" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <meta name="viewport" content="width=device-width, initial-scale=1" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <title>The Tech Philosophers ΓÇö Where Technology Meets Timeless Wisdom</title>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <meta"
+>> ParameterBinding(Out-File): name="InputObject"; value="      name="description""
+>> ParameterBinding(Out-File): name="InputObject"; value="      content="The Tech Philosophers by Raju Thoutu ΓÇö a premium platform blending AI, technology, mythology, and education research for seekers of clarity.""
+>> ParameterBinding(Out-File): name="InputObject"; value="    />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <meta property="og:title" content="The Tech Philosophers" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <meta"
+>> ParameterBinding(Out-File): name="InputObject"; value="      property="og:description""
+>> ParameterBinding(Out-File): name="InputObject"; value="      content="Dashboard hub for AI insights, mythology analogies, education research, and society commentary by Raju Thoutu.""
+>> ParameterBinding(Out-File): name="InputObject"; value="    />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <meta property="og:type" content="website" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link rel="preconnect" href="https://fonts.googleapis.com" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link"
+>> ParameterBinding(Out-File): name="InputObject"; value="      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600&display=swap""
+>> ParameterBinding(Out-File): name="InputObject"; value="      rel="stylesheet""
+>> ParameterBinding(Out-File): name="InputObject"; value="    />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link rel="stylesheet" href="assets/css/styles.css" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="  </head>"
+>> ParameterBinding(Out-File): name="InputObject"; value="  <body>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <header class="site-header" id="top">"
+>> ParameterBinding(Out-File): name="InputObject"; value="      <div class="container header__inner">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <a class="brand" href="index.html" aria-label="The Tech Philosophers home">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="brand__mark" aria-hidden="true">ΓùÄ</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="brand__text">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <span class="brand__title">The Tech Philosophers</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <span class="brand__tagline">Raju Thoutu</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="sr-only">Toggle navigation</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="nav-toggle__line"></span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="nav-toggle__line"></span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="nav-toggle__line"></span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </button>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <nav class="site-nav" aria-label="Primary">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <ul id="primary-nav" class="site-nav__list">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="index.html" aria-current="page">Home</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="about.html">About</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="insights.html">Insights</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="projects.html">Projects</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="podcasts.html">Podcasts &amp; Videos</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="contact.html">Contact</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </nav>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Activate dark mode">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="sr-only">Toggle theme</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="theme-toggle__icon" aria-hidden="true"></span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </button>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    </header>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="    <main id="main-content">"
+>> ParameterBinding(Out-File): name="InputObject"; value="      <section class="hero">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <div class="container hero__grid">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <div class="hero__content">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <p class="eyebrow">Where Technology Meets Timeless Wisdom</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <h1>Guidance for thinkers, builders, and parents navigating intelligent futures.</h1>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <p class="lead">"
+>> ParameterBinding(Out-File): name="InputObject"; value="              AI, digital transformation, mythology, education systems, and societal change ΓÇö simplified in calm, meaningful"
+>> ParameterBinding(Out-File): name="InputObject"; value="              language by technologist and educator Raju Thoutu."
+>> ParameterBinding(Out-File): name="InputObject"; value="            </p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <div class="button-row">"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <a class="btn btn--primary" href="insights.html">Explore Insights</a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <a class="btn btn--secondary" href="podcasts.html">Watch Podcasts</a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <dl class="hero__metrics" aria-label="Community metrics">"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="                <dt>Insights Published</dt>"
+>> ParameterBinding(Out-File): name="InputObject"; value="                <dd>320+</dd>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="                <dt>Podcast &amp; Video Plays</dt>"
+>> ParameterBinding(Out-File): name="InputObject"; value="                <dd>95K+</dd>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="                <dt>Newsletter Readers</dt>"
+>> ParameterBinding(Out-File): name="InputObject"; value="                <dd>18K+</dd>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </dl>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <aside class="founder-card" aria-label="About Raju Thoutu">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <div class="founder-card__avatar" aria-hidden="true">RT</div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <h2>Raju Thoutu</h2>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <p class="founder-card__role">Technologist ┬╖ Architect ┬╖ Educator ┬╖ Storyteller</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              Architecting enterprise systems, researching AI adoption, and translating Bharatiya wisdom into modern, actionable"
+>> ParameterBinding(Out-File): name="InputObject"; value="              ideas."
+>> ParameterBinding(Out-File): name="InputObject"; value="            </p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <a class="founder-card__link" href="about.html">Read the full story ΓåÆ</a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </aside>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </section>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="      <section class="section section--surface">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <div class="container">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <div class="section__header">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <h2>Navigate the ecosystem</h2>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <p>Modular destinations designed like a dashboard for quick exploration.</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <div class="quick-nav">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <a class="quick-nav__card" href="insights.html#technology-ai">"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <span class="quick-nav__label">AI &amp; Emerging Tech</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <span class="quick-nav__meta">Frameworks, enterprise architecture, applied AI toolkits.</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <a class="quick-nav__card" href="insights.html#mythology-analogies">"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <span class="quick-nav__label">Mythology &amp; Analogies</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <span class="quick-nav__meta">Mahabharata, Ramayana, Gita and modern leadership parallels.</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <a class="quick-nav__card" href="insights.html#education-research">"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <span class="quick-nav__label">Education &amp; Research</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <span class="quick-nav__meta">Hybrid learning models, child psychology, school design.</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <a class="quick-nav__card" href="insights.html#society-deep-thoughts">"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <span class="quick-nav__label">Society &amp; Deep Thoughts</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <span class="quick-nav__meta">Culture, work, emotional intelligence, conscious living.</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <a class="quick-nav__card" href="podcasts.html">"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <span class="quick-nav__label">Podcasts &amp; Videos</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <span class="quick-nav__meta">Long-form conversations, YouTube playlists, short reels.</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <a class="quick-nav__card" href="projects.html">"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <span class="quick-nav__label">My Projects</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <span class="quick-nav__meta">AI experiments, Anushtan School concept, enterprise case studies.</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </section>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="      <section class="signature-quote">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <div class="container">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <blockquote>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            ΓÇ£Knowledge becomes wisdom only when it transforms your life.ΓÇ¥"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <cite>ΓÇö The Tech Philosophers</cite>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </blockquote>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </section>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="      <section class="section" aria-labelledby="recent-posts">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <div class="container">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <div class="section__header">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <h2 id="recent-posts">Recent insights</h2>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <p>Fresh thinking across technology, mythology, education, and society.</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <a class="section__cta" href="insights.html">View all insights</a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <div class="card-grid">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <article class="content-card" data-category="technology-ai" data-tags="llm architecture">"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <p class="content-card__eyebrow">Technology &amp; AI</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <h3>Designing enterprise copilots that respect human judgment</h3>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <p>Blueprint for blending low-code platforms with trusted guardrails and Bharatiya ethics.</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <a class="content-card__link" href="article-template.html">Read article</a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </article>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <article class="content-card" data-category="mythology-analogies" data-tags="gita leadership">"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <p class="content-card__eyebrow">Mythology &amp; Analogies</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <h3>If Rama replaced Arjuna in Kurukshetra</h3>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <p>A reflective scenario on duty, restraint, and the science of timely intervention.</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <a class="content-card__link" href="article-template.html">Read article</a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </article>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <article class="content-card" data-category="education-research" data-tags="education psychology">"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <p class="content-card__eyebrow">Education &amp; Research</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <h3>Hybrid learning rhythms for holistic schools</h3>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <p>Integrating Montessori, CBSE, and Gurukula principles into a future-ready timetable.</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <a class="content-card__link" href="article-template.html">Read article</a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </article>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <article class="content-card" data-category="society-deep-thoughts" data-tags="culture">"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <p class="content-card__eyebrow">Society &amp; Deep Thoughts</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <h3>Material success vs. human connection in the AI era</h3>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <p>Why purposeful relationships become the competitive advantage for Gen Z leaders.</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <a class="content-card__link" href="article-template.html">Read article</a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </article>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <article class="content-card" data-category="technology-ai" data-tags="pega demo">"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <p class="content-card__eyebrow">Technology &amp; AI</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <h3>Pega + Azure AI: Orchestrating value-first automations</h3>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <p>A system architecture walkthrough with design notes, APIs, and measurement models.</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <a class="content-card__link" href="article-template.html">Read article</a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </article>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <article class="content-card" data-category="mythology-analogies" data-tags="krishna leadership">"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <p class="content-card__eyebrow">Mythology &amp; Analogies</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <h3>Why Krishna intervened before KamsaΓÇÖs downfall</h3>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <p>Exploring risk sensing, moral calculus, and strategic empathy for modern leaders.</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <a class="content-card__link" href="article-template.html">Read article</a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </article>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </section>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="      <section class="section section--surface" aria-labelledby="newsletter">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <div class="container newsletter">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <h2 id="newsletter">Think Better. Live Better. Build Better.</h2>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <p>Weekly email reflections blending practical technology choices with ancient Indian wisdom.</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <form class="newsletter__form" action="#" method="post">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <label class="sr-only" for="newsletter-email">Email address</label>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <input"
+>> ParameterBinding(Out-File): name="InputObject"; value="              class="newsletter__input""
+>> ParameterBinding(Out-File): name="InputObject"; value="              type="email""
+>> ParameterBinding(Out-File): name="InputObject"; value="              id="newsletter-email""
+>> ParameterBinding(Out-File): name="InputObject"; value="              name="email""
+>> ParameterBinding(Out-File): name="InputObject"; value="              placeholder="name@email.com""
+>> ParameterBinding(Out-File): name="InputObject"; value="              required"
+>> ParameterBinding(Out-File): name="InputObject"; value="            />"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <button class="btn btn--primary" type="submit">Join the newsletter</button>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <p class="newsletter__feedback" role="status"></p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </form>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </section>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    </main>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="    <footer class="site-footer">"
+>> ParameterBinding(Out-File): name="InputObject"; value="      <div class="container footer__grid">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <a class="brand brand--small" href="index.html">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <span class="brand__mark" aria-hidden="true">ΓùÄ</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <span class="brand__title">The Tech Philosophers</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <p class="footer__tagline">Calm intelligence for a meaningful technological future.</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <nav aria-label="Footer">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <ul class="footer__nav">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="about.html">About</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="insights.html">Insights</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="projects.html">Projects</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="podcasts.html">Podcasts</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="contact.html">Contact</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </nav>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      <p class="footer__legal">┬⌐ <span data-year></span> Raju Thoutu ┬╖ Crafted with clarity and conscience.</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    </footer>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="    <script src="assets/js/main.js" defer></script>"
+>> ParameterBinding(Out-File): name="InputObject"; value="  </body>"
+>> ParameterBinding(Out-File): name="InputObject"; value="</html>"
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cd 'c:\Users\thout\.gemini\antigravity\scratch\tech-philosophers'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>type temp_v1_index.html
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Tech Philosophers ΓÇö Where Technology Meets Timeless Wisdom</title>
+    <meta
+      name="description"
+      content="The Tech Philosophers by Raju Thoutu ΓÇö a premium platform blending AI, technology, mythology, and education research for seekers of clarity."
+    />
+    <meta property="og:title" content="The Tech Philosophers" />
+    <meta
+      property="og:description"
+      content="Dashboard hub for AI insights, mythology analogies, education research, and society commentary by Raju Thoutu."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container header__inner">
+        <a class="brand" href="index.html" aria-label="The Tech Philosophers home">
+          <span class="brand__mark" aria-hidden="true">ΓùÄ</span>
+          <span class="brand__text">
+            <span class="brand__title">The Tech Philosophers</span>
+            <span class="brand__tagline">Raju Thoutu</span>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="nav-toggle__line"></span>
+          <span class="nav-toggle__line"></span>
+          <span class="nav-toggle__line"></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary">
+          <ul id="primary-nav" class="site-nav__list">
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="podcasts.html">Podcasts &amp; Videos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Activate dark mode">
+          <span class="sr-only">Toggle theme</span>
+          <span class="theme-toggle__icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="eyebrow">Where Technology Meets Timeless Wisdom</p>
+            <h1>Guidance for thinkers, builders, and parents navigating intelligent futures.</h1>
+            <p class="lead">
+              AI, digital transformation, mythology, education systems, and societal change ΓÇö simplified in calm, meaningful
+              language by technologist and educator Raju Thoutu.
+            </p>
+            <div class="button-row">
+              <a class="btn btn--primary" href="insights.html">Explore Insights</a>
+              <a class="btn btn--secondary" href="podcasts.html">Watch Podcasts</a>
+            </div>
+            <dl class="hero__metrics" aria-label="Community metrics">
+              <div>
+                <dt>Insights Published</dt>
+                <dd>320+</dd>
+              </div>
+              <div>
+                <dt>Podcast &amp; Video Plays</dt>
+                <dd>95K+</dd>
+              </div>
+              <div>
+                <dt>Newsletter Readers</dt>
+                <dd>18K+</dd>
+              </div>
+            </dl>
+          </div>
+          <aside class="founder-card" aria-label="About Raju Thoutu">
+            <div class="founder-card__avatar" aria-hidden="true">RT</div>
+            <h2>Raju Thoutu</h2>
+            <p class="founder-card__role">Technologist ┬╖ Architect ┬╖ Educator ┬╖ Storyteller</p>
+            <p>
+              Architecting enterprise systems, researching AI adoption, and translating Bharatiya wisdom into modern, actionable
+              ideas.
+            </p>
+            <a class="founder-card__link" href="about.html">Read the full story ΓåÆ</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section--surface">
+        <div class="container">
+          <div class="section__header">
+            <h2>Navigate the ecosystem</h2>
+            <p>Modular destinations designed like a dashboard for quick exploration.</p>
+          </div>
+          <div class="quick-nav">
+            <a class="quick-nav__card" href="insights.html#technology-ai">
+              <span class="quick-nav__label">AI &amp; Emerging Tech</span>
+              <span class="quick-nav__meta">Frameworks, enterprise architecture, applied AI toolkits.</span>
+            </a>
+            <a class="quick-nav__card" href="insights.html#mythology-analogies">
+              <span class="quick-nav__label">Mythology &amp; Analogies</span>
+              <span class="quick-nav__meta">Mahabharata, Ramayana, Gita and modern leadership parallels.</span>
+            </a>
+            <a class="quick-nav__card" href="insights.html#education-research">
+              <span class="quick-nav__label">Education &amp; Research</span>
+              <span class="quick-nav__meta">Hybrid learning models, child psychology, school design.</span>
+            </a>
+            <a class="quick-nav__card" href="insights.html#society-deep-thoughts">
+              <span class="quick-nav__label">Society &amp; Deep Thoughts</span>
+              <span class="quick-nav__meta">Culture, work, emotional intelligence, conscious living.</span>
+            </a>
+            <a class="quick-nav__card" href="podcasts.html">
+              <span class="quick-nav__label">Podcasts &amp; Videos</span>
+              <span class="quick-nav__meta">Long-form conversations, YouTube playlists, short reels.</span>
+            </a>
+            <a class="quick-nav__card" href="projects.html">
+              <span class="quick-nav__label">My Projects</span>
+              <span class="quick-nav__meta">AI experiments, Anushtan School concept, enterprise case studies.</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="signature-quote">
+        <div class="container">
+          <blockquote>
+            ΓÇ£Knowledge becomes wisdom only when it transforms your life.ΓÇ¥
+            <cite>ΓÇö The Tech Philosophers</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="recent-posts">
+        <div class="container">
+          <div class="section__header">
+            <div>
+              <h2 id="recent-posts">Recent insights</h2>
+              <p>Fresh thinking across technology, mythology, education, and society.</p>
+            </div>
+            <a class="section__cta" href="insights.html">View all insights</a>
+          </div>
+          <div class="card-grid">
+            <article class="content-card" data-category="technology-ai" data-tags="llm architecture">
+              <p class="content-card__eyebrow">Technology &amp; AI</p>
+              <h3>Designing enterprise copilots that respect human judgment</h3>
+              <p>Blueprint for blending low-code platforms with trusted guardrails and Bharatiya ethics.</p>
+              <a class="content-card__link" href="article-template.html">Read article</a>
+            </article>
+            <article class="content-card" data-category="mythology-analogies" data-tags="gita leadership">
+              <p class="content-card__eyebrow">Mythology &amp; Analogies</p>
+              <h3>If Rama replaced Arjuna in Kurukshetra</h3>
+              <p>A reflective scenario on duty, restraint, and the science of timely intervention.</p>
+              <a class="content-card__link" href="article-template.html">Read article</a>
+            </article>
+            <article class="content-card" data-category="education-research" data-tags="education psychology">
+              <p class="content-card__eyebrow">Education &amp; Research</p>
+              <h3>Hybrid learning rhythms for holistic schools</h3>
+              <p>Integrating Montessori, CBSE, and Gurukula principles into a future-ready timetable.</p>
+              <a class="content-card__link" href="article-template.html">Read article</a>
+            </article>
+            <article class="content-card" data-category="society-deep-thoughts" data-tags="culture">
+              <p class="content-card__eyebrow">Society &amp; Deep Thoughts</p>
+              <h3>Material success vs. human connection in the AI era</h3>
+              <p>Why purposeful relationships become the competitive advantage for Gen Z leaders.</p>
+              <a class="content-card__link" href="article-template.html">Read article</a>
+            </article>
+            <article class="content-card" data-category="technology-ai" data-tags="pega demo">
+              <p class="content-card__eyebrow">Technology &amp; AI</p>
+              <h3>Pega + Azure AI: Orchestrating value-first automations</h3>
+              <p>A system architecture walkthrough with design notes, APIs, and measurement models.</p>
+              <a class="content-card__link" href="article-template.html">Read article</a>
+            </article>
+            <article class="content-card" data-category="mythology-analogies" data-tags="krishna leadership">
+              <p class="content-card__eyebrow">Mythology &amp; Analogies</p>
+              <h3>Why Krishna intervened before KamsaΓÇÖs downfall</h3>
+              <p>Exploring risk sensing, moral calculus, and strategic empathy for modern leaders.</p>
+              <a class="content-card__link" href="article-template.html">Read article</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--surface" aria-labelledby="newsletter">
+        <div class="container newsletter">
+          <div>
+            <h2 id="newsletter">Think Better. Live Better. Build Better.</h2>
+            <p>Weekly email reflections blending practical technology choices with ancient Indian wisdom.</p>
+          </div>
+          <form class="newsletter__form" action="#" method="post">
+            <label class="sr-only" for="newsletter-email">Email address</label>
+            <input
+              class="newsletter__input"
+              type="email"
+              id="newsletter-email"
+              name="email"
+              placeholder="name@email.com"
+              required
+            />
+            <button class="btn btn--primary" type="submit">Join the newsletter</button>
+            <p class="newsletter__feedback" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <div>
+          <a class="brand brand--small" href="index.html">
+            <span class="brand__mark" aria-hidden="true">ΓùÄ</span>
+            <span class="brand__title">The Tech Philosophers</span>
+          </a>
+          <p class="footer__tagline">Calm intelligence for a meaningful technological future.</p>
+        </div>
+        <nav aria-label="Footer">
+          <ul class="footer__nav">
+            <li><a href="about.html">About</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="podcasts.html">Podcasts</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer__legal">┬⌐ <span data-year></span> Raju Thoutu ┬╖ Crafted with clarity and conscience.</p>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cd 'c:\Users\thout\.gemini\antigravity\scratch\tech-philosophers'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>Get-Content temp_v1_index.html | Set-Content temp_v1_index_utf8.html -Encoding UTF8
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cd 'c:\Users\thout\.gemini\antigravity\scratch\tech-philosophers'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>& "C:\Program Files\Git\cmd\git.exe" show origin/main:about.html > temp_v1_about.html
+>> ParameterBinding(Out-File): name="InputObject"; value="<!DOCTYPE html>"
+>> ParameterBinding(Out-File): name="InputObject"; value="<html lang="en" data-theme="light">"
+>> ParameterBinding(Out-File): name="InputObject"; value="  <head>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <meta charset="UTF-8" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <meta name="viewport" content="width=device-width, initial-scale=1" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <title>About ΓÇö The Tech Philosophers</title>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <meta name="description" content="Discover the journey of Raju Thoutu and the vision behind The Tech Philosophers." />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link rel="preconnect" href="https://fonts.googleapis.com" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link"
+>> ParameterBinding(Out-File): name="InputObject"; value="      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600&display=swap""
+>> ParameterBinding(Out-File): name="InputObject"; value="      rel="stylesheet""
+>> ParameterBinding(Out-File): name="InputObject"; value="    />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link rel="stylesheet" href="assets/css/styles.css" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="  </head>"
+>> ParameterBinding(Out-File): name="InputObject"; value="  <body>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <header class="site-header" id="top">"
+>> ParameterBinding(Out-File): name="InputObject"; value="      <div class="container header__inner">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <a class="brand" href="index.html" aria-label="The Tech Philosophers home">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="brand__mark" aria-hidden="true">ΓùÄ</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="brand__text">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <span class="brand__title">The Tech Philosophers</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <span class="brand__tagline">Raju Thoutu</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="sr-only">Toggle navigation</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="nav-toggle__line"></span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="nav-toggle__line"></span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="nav-toggle__line"></span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </button>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <nav class="site-nav" aria-label="Primary">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <ul id="primary-nav" class="site-nav__list">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="index.html">Home</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="about.html" aria-current="page">About</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="insights.html">Insights</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="projects.html">Projects</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="podcasts.html">Podcasts &amp; Videos</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="contact.html">Contact</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </nav>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Activate dark mode">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="sr-only">Toggle theme</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="theme-toggle__icon" aria-hidden="true"></span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </button>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    </header>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="    <main id="main-content" class="page">"
+>> ParameterBinding(Out-File): name="InputObject"; value="      <section class="page-hero">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <div class="container narrow">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <p class="eyebrow">About</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <h1>Technologist, educator, podcaster ΓÇö bridging ancient wisdom with tomorrowΓÇÖs systems.</h1>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <p class="lead">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            Raju Thoutu is the mind behind The Tech Philosophers, a platform built to translate emerging technology and Bharatiya"
+>> ParameterBinding(Out-File): name="InputObject"; value="            philosophy into everyday decisions for leaders, parents, and curious learners."
+>> ParameterBinding(Out-File): name="InputObject"; value="          </p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </section>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="      <section class="section">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <div class="container split">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <h2>Who I am</h2>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              I am a Lead System Architect and AI practitioner guiding organizations as they modernize responsibly. From low-code"
+>> ParameterBinding(Out-File): name="InputObject"; value="              automations to enterprise data strategies, my focus remains consistent: design technology that respects people."
+>> ParameterBinding(Out-File): name="InputObject"; value="            </p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              Outside boardrooms, I teach, facilitate workshops, and host conversations that simplify dense topics into actionable"
+>> ParameterBinding(Out-File): name="InputObject"; value="              clarity."
+>> ParameterBinding(Out-File): name="InputObject"; value="            </p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <h2>My background</h2>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <ul class="timeline">"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li><strong>Hyderabad roots:</strong> Grew up immersed in storytelling, mathematics, and classical philosophy.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li><strong>Journey to the US:</strong> Built cross-continental expertise in enterprise architecture and transformation.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li><strong>Lead System Architect:</strong> Helping Fortune 500 teams align strategy, process, and data with purposeful design.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li><strong>AI practitioner:</strong> Prototyping copilots, knowledge engines, and education models grounded in ethics.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </section>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="      <section class="section section--surface">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <div class="container narrow">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <h2>Why The Tech Philosophers exists</h2>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            Technology shapes behavior, yet wisdom gives it meaning. This platform combines research, storytelling, and systems"
+>> ParameterBinding(Out-File): name="InputObject"; value="            thinking to help people make choices that honor both progress and humanity. Everything is written in simple English,"
+>> ParameterBinding(Out-File): name="InputObject"; value="            intentionally calm, and free from buzzwords."
+>> ParameterBinding(Out-File): name="InputObject"; value="          </p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </section>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="      <section class="section">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <div class="container split">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <h2>Long-term vision</h2>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <ul class="vision-list">"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>AI education that builds discernment, not dependence.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Holistic schooling models inspired by AnushtanΓÇÖs research.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Resources for parents guiding digital natives with empathy.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Spaces for technologists to explore philosophy without judgment.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <h2>How we work</h2>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              The Tech Philosophers brand is modular and extendable. Every page, playlist, and research note nests into a broader"
+>> ParameterBinding(Out-File): name="InputObject"; value="              knowledge system ΓÇö ready to scale to hundreds of insights without losing clarity or warmth."
+>> ParameterBinding(Out-File): name="InputObject"; value="            </p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <a class="btn btn--primary" href="insights.html">Explore the insights system</a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </section>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    </main>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="    <footer class="site-footer">"
+>> ParameterBinding(Out-File): name="InputObject"; value="      <div class="container footer__grid">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <a class="brand brand--small" href="index.html">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <span class="brand__mark" aria-hidden="true">ΓùÄ</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <span class="brand__title">The Tech Philosophers</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <p class="footer__tagline">Calm intelligence for a meaningful technological future.</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <nav aria-label="Footer">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <ul class="footer__nav">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="about.html" aria-current="page">About</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="insights.html">Insights</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="projects.html">Projects</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="podcasts.html">Podcasts</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="contact.html">Contact</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </nav>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      <p class="footer__legal">┬⌐ <span data-year></span> Raju Thoutu ┬╖ Crafted with clarity and conscience.</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    </footer>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="    <script src="assets/js/main.js" defer></script>"
+>> ParameterBinding(Out-File): name="InputObject"; value="  </body>"
+>> ParameterBinding(Out-File): name="InputObject"; value="</html>"
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cd 'c:\Users\thout\.gemini\antigravity\scratch\tech-philosophers'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>mkdir "react-site\app\about"
+mkdir : An item with the specified name 
+C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers\react-site\app\about already exists.
+At line:1 char:1
++ mkdir "react-site\app\about"
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\thout\...-site\app\about:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
+mkdir : An item with the
+specified name C:\Users\th
+out\.gemini\antigravity\sc
+ratch\tech-philosophers\re
+act-site\app\about
+already exists.
+At line:1 char:1
++ mkdir
+"react-site\app\about"
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~
+    + CategoryInfo
+      : ResourceExists:
+  (C:\Users\thout\...-s
+ ite\app\about:String)
+ [New-Item], IOExcept
+ion
+    + FullyQualifiedError
+   Id : DirectoryExist,M
+  icrosoft.PowerShell.C
+ ommands.NewItemComman
+d
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cd 'c:\Users\thout\.gemini\antigravity\scratch\tech-philosophers'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>& "C:\Program Files\Git\cmd\git.exe" show origin/main:projects.html > temp_v1_projects.html
+>> ParameterBinding(Out-File): name="InputObject"; value="<!DOCTYPE html>"
+>> ParameterBinding(Out-File): name="InputObject"; value="<html lang="en" data-theme="light">"
+>> ParameterBinding(Out-File): name="InputObject"; value="  <head>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <meta charset="UTF-8" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <meta name="viewport" content="width=device-width, initial-scale=1" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <title>Projects ΓÇö The Tech Philosophers</title>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <meta"
+>> ParameterBinding(Out-File): name="InputObject"; value="      name="description""
+>> ParameterBinding(Out-File): name="InputObject"; value="      content="Explore the core projects led by Raju Thoutu across education, AI experiments, enterprise work, and multimedia.""
+>> ParameterBinding(Out-File): name="InputObject"; value="    />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link rel="preconnect" href="https://fonts.googleapis.com" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link"
+>> ParameterBinding(Out-File): name="InputObject"; value="      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600&display=swap""
+>> ParameterBinding(Out-File): name="InputObject"; value="      rel="stylesheet""
+>> ParameterBinding(Out-File): name="InputObject"; value="    />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link rel="stylesheet" href="assets/css/styles.css" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="  </head>"
+>> ParameterBinding(Out-File): name="InputObject"; value="  <body>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <header class="site-header" id="top">"
+>> ParameterBinding(Out-File): name="InputObject"; value="      <div class="container header__inner">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <a class="brand" href="index.html" aria-label="The Tech Philosophers home">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="brand__mark" aria-hidden="true">ΓùÄ</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="brand__text">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <span class="brand__title">The Tech Philosophers</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <span class="brand__tagline">Raju Thoutu</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="sr-only">Toggle navigation</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="nav-toggle__line"></span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="nav-toggle__line"></span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="nav-toggle__line"></span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </button>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <nav class="site-nav" aria-label="Primary">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <ul id="primary-nav" class="site-nav__list">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="index.html">Home</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="about.html">About</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="insights.html">Insights</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="projects.html" aria-current="page">Projects</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="podcasts.html">Podcasts &amp; Videos</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="contact.html">Contact</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </nav>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Activate dark mode">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="sr-only">Toggle theme</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="theme-toggle__icon" aria-hidden="true"></span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </button>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    </header>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="    <main id="main-content" class="page">"
+>> ParameterBinding(Out-File): name="InputObject"; value="      <section class="page-hero">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <div class="container">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <p class="eyebrow">Projects</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <h1>Living laboratories where technology, education, and storytelling meet.</h1>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <p class="lead">Each project is a module in the Tech Philosophers ecosystem ΓÇö built to scale, share, and evolve.</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </section>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="      <section class="section">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <div class="container project-grid">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <article class="project-card">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <header>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <p class="project-card__category">Education Research</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <h2>Anushtan Holistic School</h2>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </header>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <p class="project-card__summary">Philosophy ┬╖ Model ┬╖ Research ┬╖ Vision</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Curriculum architecture balancing STEM, arts, and dharmic wisdom.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>AI-assisted personalized guidance with human mentors.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Campus planning integrating sacred geometry and modern ergonomics.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Community labs for parents and educators to co-create rituals.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <a class="project-card__link" href="article-template.html">View research blueprint ΓåÆ</a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </article>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="          <article class="project-card">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <header>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <p class="project-card__category">AI Experiments</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <h2>Applied AI &amp; Experience Demos</h2>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </header>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <p class="project-card__summary">Azure Foundry ┬╖ Pega + AI ┬╖ Postman demos</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Composable AI copilots for customer service, learning, and design.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Knowledge graph visualizations using Sri Yantra-inspired layouts.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Scenario libraries for responsible AI decisions.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Hands-on walkthroughs with GitHub repos and API collections.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <a class="project-card__link" href="article-template.html">Explore experiments ΓåÆ</a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </article>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="          <article class="project-card">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <header>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <p class="project-card__category">Enterprise Work</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <h2>Architecture &amp; Transformation</h2>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </header>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <p class="project-card__summary">Citi ┬╖ ConEd ┬╖ MasterCard ┬╖ CRMS ┬╖ Upgrades</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Designing platforms that respect regulations, scale, and user empathy.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Migration accelerators for legacy to cloud transformations.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Playbooks aligning business, architecture, and Bharatiya principles.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Coaching leaders on AI literacy and human-centric metrics.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <a class="project-card__link" href="article-template.html">See enterprise case notes ΓåÆ</a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </article>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="          <article class="project-card">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <header>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <p class="project-card__category">Media &amp; Community</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <h2>Podcasts &amp; Web Content</h2>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </header>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <p class="project-card__summary">Telugu + English</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Long-form episodes blending mythological narratives with modern dilemmas.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Video explainers with calm motion graphics and neural-inspired visuals.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Short reels highlighting parenting, AI ethics, and emotional intelligence.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Community Q&amp;A sessions, workshops, and live stream archives.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <a class="project-card__link" href="podcasts.html">Visit the podcasts hub ΓåÆ</a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </article>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </section>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    </main>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="    <footer class="site-footer">"
+>> ParameterBinding(Out-File): name="InputObject"; value="      <div class="container footer__grid">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <a class="brand brand--small" href="index.html">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <span class="brand__mark" aria-hidden="true">ΓùÄ</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <span class="brand__title">The Tech Philosophers</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <p class="footer__tagline">Calm intelligence for a meaningful technological future.</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <nav aria-label="Footer">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <ul class="footer__nav">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="about.html">About</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="insights.html">Insights</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="projects.html" aria-current="page">Projects</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="podcasts.html">Podcasts</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="contact.html">Contact</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </nav>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      <p class="footer__legal">┬⌐ <span data-year></span> Raju Thoutu ┬╖ Crafted with clarity and conscience.</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    </footer>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="    <script src="assets/js/main.js" defer></script>"
+>> ParameterBinding(Out-File): name="InputObject"; value="  </body>"
+>> ParameterBinding(Out-File): name="InputObject"; value="</html>"
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cd 'c:\Users\thout\.gemini\antigravity\scratch\tech-philosophers'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>Get-Content temp_v1_podcasts.html | Set-Content temp_v1_podcasts_utf8.html -Encoding UTF8
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cd 'c:\Users\thout\.gemini\antigravity\scratch\tech-philosophers'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>& "C:\Program Files\Git\cmd\git.exe" show origin/main:projects.html > temp_v1_projects.html
+>> ParameterBinding(Out-File): name="InputObject"; value="<!DOCTYPE html>"
+>> ParameterBinding(Out-File): name="InputObject"; value="<html lang="en" data-theme="light">"
+>> ParameterBinding(Out-File): name="InputObject"; value="  <head>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <meta charset="UTF-8" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <meta name="viewport" content="width=device-width, initial-scale=1" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <title>Projects ΓÇö The Tech Philosophers</title>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <meta"
+>> ParameterBinding(Out-File): name="InputObject"; value="      name="description""
+>> ParameterBinding(Out-File): name="InputObject"; value="      content="Explore the core projects led by Raju Thoutu across education, AI experiments, enterprise work, and multimedia.""
+>> ParameterBinding(Out-File): name="InputObject"; value="    />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link rel="preconnect" href="https://fonts.googleapis.com" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link"
+>> ParameterBinding(Out-File): name="InputObject"; value="      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600&display=swap""
+>> ParameterBinding(Out-File): name="InputObject"; value="      rel="stylesheet""
+>> ParameterBinding(Out-File): name="InputObject"; value="    />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link rel="stylesheet" href="assets/css/styles.css" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="  </head>"
+>> ParameterBinding(Out-File): name="InputObject"; value="  <body>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <header class="site-header" id="top">"
+>> ParameterBinding(Out-File): name="InputObject"; value="      <div class="container header__inner">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <a class="brand" href="index.html" aria-label="The Tech Philosophers home">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="brand__mark" aria-hidden="true">ΓùÄ</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="brand__text">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <span class="brand__title">The Tech Philosophers</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <span class="brand__tagline">Raju Thoutu</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="sr-only">Toggle navigation</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="nav-toggle__line"></span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="nav-toggle__line"></span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="nav-toggle__line"></span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </button>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <nav class="site-nav" aria-label="Primary">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <ul id="primary-nav" class="site-nav__list">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="index.html">Home</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="about.html">About</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="insights.html">Insights</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="projects.html" aria-current="page">Projects</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="podcasts.html">Podcasts &amp; Videos</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="contact.html">Contact</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </nav>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Activate dark mode">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="sr-only">Toggle theme</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="theme-toggle__icon" aria-hidden="true"></span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </button>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    </header>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="    <main id="main-content" class="page">"
+>> ParameterBinding(Out-File): name="InputObject"; value="      <section class="page-hero">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <div class="container">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <p class="eyebrow">Projects</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <h1>Living laboratories where technology, education, and storytelling meet.</h1>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <p class="lead">Each project is a module in the Tech Philosophers ecosystem ΓÇö built to scale, share, and evolve.</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </section>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="      <section class="section">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <div class="container project-grid">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <article class="project-card">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <header>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <p class="project-card__category">Education Research</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <h2>Anushtan Holistic School</h2>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </header>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <p class="project-card__summary">Philosophy ┬╖ Model ┬╖ Research ┬╖ Vision</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Curriculum architecture balancing STEM, arts, and dharmic wisdom.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>AI-assisted personalized guidance with human mentors.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Campus planning integrating sacred geometry and modern ergonomics.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Community labs for parents and educators to co-create rituals.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <a class="project-card__link" href="article-template.html">View research blueprint ΓåÆ</a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </article>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="          <article class="project-card">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <header>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <p class="project-card__category">AI Experiments</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <h2>Applied AI &amp; Experience Demos</h2>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </header>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <p class="project-card__summary">Azure Foundry ┬╖ Pega + AI ┬╖ Postman demos</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Composable AI copilots for customer service, learning, and design.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Knowledge graph visualizations using Sri Yantra-inspired layouts.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Scenario libraries for responsible AI decisions.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Hands-on walkthroughs with GitHub repos and API collections.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <a class="project-card__link" href="article-template.html">Explore experiments ΓåÆ</a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </article>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="          <article class="project-card">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <header>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <p class="project-card__category">Enterprise Work</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <h2>Architecture &amp; Transformation</h2>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </header>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <p class="project-card__summary">Citi ┬╖ ConEd ┬╖ MasterCard ┬╖ CRMS ┬╖ Upgrades</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Designing platforms that respect regulations, scale, and user empathy.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Migration accelerators for legacy to cloud transformations.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Playbooks aligning business, architecture, and Bharatiya principles.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Coaching leaders on AI literacy and human-centric metrics.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <a class="project-card__link" href="article-template.html">See enterprise case notes ΓåÆ</a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </article>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="          <article class="project-card">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <header>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <p class="project-card__category">Media &amp; Community</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <h2>Podcasts &amp; Web Content</h2>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </header>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <p class="project-card__summary">Telugu + English</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Long-form episodes blending mythological narratives with modern dilemmas.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Video explainers with calm motion graphics and neural-inspired visuals.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Short reels highlighting parenting, AI ethics, and emotional intelligence.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Community Q&amp;A sessions, workshops, and live stream archives.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <a class="project-card__link" href="podcasts.html">Visit the podcasts hub ΓåÆ</a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </article>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </section>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    </main>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="    <footer class="site-footer">"
+>> ParameterBinding(Out-File): name="InputObject"; value="      <div class="container footer__grid">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <a class="brand brand--small" href="index.html">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <span class="brand__mark" aria-hidden="true">ΓùÄ</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <span class="brand__title">The Tech Philosophers</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <p class="footer__tagline">Calm intelligence for a meaningful technological future.</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <nav aria-label="Footer">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <ul class="footer__nav">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="about.html">About</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="insights.html">Insights</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="projects.html" aria-current="page">Projects</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="podcasts.html">Podcasts</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="contact.html">Contact</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </nav>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      <p class="footer__legal">┬⌐ <span data-year></span> Raju Thoutu ┬╖ Crafted with clarity and conscience.</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    </footer>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="    <script src="assets/js/main.js" defer></script>"
+>> ParameterBinding(Out-File): name="InputObject"; value="  </body>"
+>> ParameterBinding(Out-File): name="InputObject"; value="</html>"
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cd 'c:\Users\thout\.gemini\antigravity\scratch\tech-philosophers'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cmd /c "git show origin/main:projects.html > temp_projects.html"
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cd 'c:\Users\thout\.gemini\antigravity\scratch\tech-philosophers'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cmd /c ""C:\Program Files\Git\cmd\git.exe" show origin/main:projects.html > temp_projects.html"
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cd 'c:\Users\thout\.gemini\antigravity\scratch\tech-philosophers'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>& "C:\Program Files\Git\cmd\git.exe" show origin/main:projects.html | Out-File -Encoding utf8 temp_projects.html
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cd 'c:\Users\thout\.gemini\antigravity\scratch\tech-philosophers'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>& "C:\Program Files\Git\cmd\git.exe" show origin/main:podcasts.html | Out-File -Encoding utf8 temp_podcasts.html
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cd 'c:\Users\thout\.gemini\antigravity\scratch\tech-philosophers'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>& "C:\Program Files\Git\cmd\git.exe" show origin/main:article-template.html > temp_article.html
+>> ParameterBinding(Out-File): name="InputObject"; value="<!DOCTYPE html>"
+>> ParameterBinding(Out-File): name="InputObject"; value="<html lang="en" data-theme="light">"
+>> ParameterBinding(Out-File): name="InputObject"; value="  <head>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <meta charset="UTF-8" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <meta name="viewport" content="width=device-width, initial-scale=1" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <title>Insight Template ΓÇö The Tech Philosophers</title>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <meta name="description" content="Template for The Tech Philosophers articles with modular table of contents and metadata." />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link rel="preconnect" href="https://fonts.googleapis.com" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link"
+>> ParameterBinding(Out-File): name="InputObject"; value="      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600&display=swap""
+>> ParameterBinding(Out-File): name="InputObject"; value="      rel="stylesheet""
+>> ParameterBinding(Out-File): name="InputObject"; value="    />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <link rel="stylesheet" href="assets/css/styles.css" />"
+>> ParameterBinding(Out-File): name="InputObject"; value="  </head>"
+>> ParameterBinding(Out-File): name="InputObject"; value="  <body>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    <header class="site-header" id="top">"
+>> ParameterBinding(Out-File): name="InputObject"; value="      <div class="container header__inner">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <a class="brand" href="index.html" aria-label="The Tech Philosophers home">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="brand__mark" aria-hidden="true">ΓùÄ</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="brand__text">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <span class="brand__title">The Tech Philosophers</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <span class="brand__tagline">Raju Thoutu</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="sr-only">Toggle navigation</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="nav-toggle__line"></span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="nav-toggle__line"></span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="nav-toggle__line"></span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </button>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <nav class="site-nav" aria-label="Primary">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <ul id="primary-nav" class="site-nav__list">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="index.html">Home</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="about.html">About</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="insights.html">Insights</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="projects.html">Projects</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="podcasts.html">Podcasts &amp; Videos</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="contact.html">Contact</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </nav>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Activate dark mode">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="sr-only">Toggle theme</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <span class="theme-toggle__icon" aria-hidden="true"></span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </button>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    </header>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="    <main id="main-content" class="page article">"
+>> ParameterBinding(Out-File): name="InputObject"; value="      <article class="article__layout">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <header class="article__header">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <p class="article__category">Technology &amp; AI Insights</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <h1>Sample article title placed here for layout preview</h1>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <p class="article__meta">Published June 12, 2025 ┬╖ Tags: <a href="#">LLM</a>, <a href="#">Enterprise Architecture</a></p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </header>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="        <aside class="article__toc" aria-label="Table of contents">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <p class="article__toc-title">Table of contents</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <ol>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="#section-1">Context &amp; question</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="#section-2">Framework</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="#section-3">Case application</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="#section-4">Reflection prompts</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </ol>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </aside>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="        <div class="article__body">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <section id="section-1">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <h2>Context &amp; question</h2>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              Use this space to outline why the topic matters. Introduce the philosophical angle, the technological scenario, and"
+>> ParameterBinding(Out-File): name="InputObject"; value="              the audience pain point in simple English."
+>> ParameterBinding(Out-File): name="InputObject"; value="            </p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </section>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <section id="section-2">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <h2>Framework</h2>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              Present the guiding model or mental map. Visuals such as neural networks or Sri Yantra line art can be embedded here"
+>> ParameterBinding(Out-File): name="InputObject"; value="              as SVGs or background graphics."
+>> ParameterBinding(Out-File): name="InputObject"; value="            </p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Principle 1 ΓÇö Technology with conscience.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Principle 2 ΓÇö Education that nurtures curiosity.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Principle 3 ΓÇö Society with compassionate leadership.</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </section>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <section id="section-3">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <h2>Case application</h2>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              Detail how the framework applies to a real project. Reference AI tools, mythology analogies, or education research as"
+>> ParameterBinding(Out-File): name="InputObject"; value="              needed."
+>> ParameterBinding(Out-File): name="InputObject"; value="            </p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <blockquote>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              ΓÇ£Every system we design should make it easier for people to choose wisdom over speed.ΓÇ¥"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </blockquote>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </section>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <section id="section-4">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <h2>Reflection prompts</h2>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <p>Close with actions, journaling questions, or discussion prompts.</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <ol>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>Where does your team need more clarity?</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>How will you measure transformation beyond metrics?</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="              <li>What wisdom tradition can help answer your next decision?</li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            </ol>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </section>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </article>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    </main>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="    <footer class="site-footer">"
+>> ParameterBinding(Out-File): name="InputObject"; value="      <div class="container footer__grid">"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <a class="brand brand--small" href="index.html">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <span class="brand__mark" aria-hidden="true">ΓùÄ</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <span class="brand__title">The Tech Philosophers</span>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </a>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <p class="footer__tagline">Calm intelligence for a meaningful technological future.</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        <nav aria-label="Footer">"
+>> ParameterBinding(Out-File): name="InputObject"; value="          <ul class="footer__nav">"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="about.html">About</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="insights.html">Insights</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="projects.html">Projects</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="podcasts.html">Podcasts</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="            <li><a href="contact.html">Contact</a></li>"
+>> ParameterBinding(Out-File): name="InputObject"; value="          </ul>"
+>> ParameterBinding(Out-File): name="InputObject"; value="        </nav>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      </div>"
+>> ParameterBinding(Out-File): name="InputObject"; value="      <p class="footer__legal">┬⌐ <span data-year></span> Raju Thoutu ┬╖ Crafted with clarity and conscience.</p>"
+>> ParameterBinding(Out-File): name="InputObject"; value="    </footer>"
+>> ParameterBinding(Out-File): name="InputObject"; value=""
+>> ParameterBinding(Out-File): name="InputObject"; value="    <script src="assets/js/main.js" defer></script>"
+>> ParameterBinding(Out-File): name="InputObject"; value="  </body>"
+>> ParameterBinding(Out-File): name="InputObject"; value="</html>"
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>cd 'c:\Users\thout\.gemini\antigravity\scratch\tech-philosophers'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
+PS>& "C:\Program Files\Git\cmd\git.exe" status
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cthout\x5c.gemini\x5cantigravity\x5cscratch\x5ctech-philosophersPS C:\Users\thout\.gemini\antigravity\scratch\tech-philosophers> ]633;B
