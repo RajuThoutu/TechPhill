@@ -59,7 +59,7 @@ export default function Home() {
               </motion.p>
 
               <motion.div variants={itemVariants} className="flex flex-wrap gap-4 mb-12">
-                <Button href="/insights">Explore Insights</Button>
+                <Button href="/blog">Explore Insights</Button>
                 <Button href="/podcasts" variant="outline">Watch Podcasts</Button>
               </motion.div>
 
@@ -158,7 +158,7 @@ export default function Home() {
               <h2 className="text-4xl font-bold mt-2">Fresh thinking</h2>
               <p className="text-[var(--text-secondary)] mt-2">Across technology, mythology, education, and society.</p>
             </div>
-            <Button href="/insights" variant="outline" className="hidden md:inline-flex">View all insights</Button>
+            <Button href="/blog" variant="outline" className="hidden md:inline-flex">View all insights</Button>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -207,7 +207,7 @@ export default function Home() {
           </div>
 
           <div className="mt-12 text-center md:hidden">
-            <Button href="/insights" variant="outline">View All Articles</Button>
+            <Button href="/blog" variant="outline">View All Articles</Button>
           </div>
         </div>
       </section>
