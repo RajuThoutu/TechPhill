@@ -33,10 +33,10 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative pt-12 pb-20 lg:pt-32 lg:pb-40 overflow-hidden">
-        {/* Background Gradients */}
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-b from-[var(--accent-soft)] to-transparent opacity-50 -z-10 blur-3xl rounded-full translate-x-1/3 -translate-y-1/4"></div>
-        <div className="absolute bottom-0 left-0 w-1/3 h-2/3 bg-gradient-to-t from-[var(--bg-secondary)] to-transparent opacity-50 -z-10 blur-3xl rounded-full -translate-x-1/4 translate-y-1/4"></div>
+      <section className="relative pt-12 pb-20 lg:pt-32 lg:pb-40 overflow-hidden text-center md:text-left">
+        {/* Background Gradients - Optimized for Performance */}
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-b from-[var(--accent-soft)] to-transparent opacity-50 -z-10 blur-3xl rounded-full translate-x-1/3 -translate-y-1/4 will-change-transform" style={{ transform: 'translate3d(33%, -25%, 0)' }}></div>
+        <div className="absolute bottom-0 left-0 w-1/3 h-2/3 bg-gradient-to-t from-[var(--bg-secondary)] to-transparent opacity-50 -z-10 blur-3xl rounded-full -translate-x-1/4 translate-y-1/4 will-change-transform" style={{ transform: 'translate3d(-25%, 25%, 0)' }}></div>
 
         <div className="container-custom relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mt-12">
@@ -49,7 +49,7 @@ export default function Home() {
               <motion.p variants={itemVariants} className="text-[var(--accent-primary)] font-semibold tracking-wider uppercase text-sm mb-4">
                 Where Technology Meets Timeless Wisdom
               </motion.p>
-              
+
               <motion.h1 variants={itemVariants} className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
                 Guidance for thinkers, builders, and parents navigating intelligent futures.
               </motion.h1>
@@ -183,7 +183,7 @@ export default function Home() {
               slug="hybrid-learning"
               date="Aug 15, 2023"
             />
-             <BlogCard
+            <BlogCard
               category="Society & Deep Thoughts"
               title="Material success vs. human connection in the AI era"
               excerpt="Why purposeful relationships become the competitive advantage for Gen Z leaders."
@@ -232,20 +232,20 @@ export default function Home() {
       {/* Newsletter Section - [New] from V1 */}
       <section className="py-24 bg-[var(--bg-card)] border-y border-[var(--border-color)]">
         <div className="container-custom">
-            <div className="max-w-3xl mx-auto text-center">
-                <h2 className="text-3xl font-bold mb-4">Think Better. Live Better. Build Better.</h2>
-                <p className="text-[var(--text-secondary)] mb-8">Weekly email reflections blending practical technology choices with ancient Indian wisdom.</p>
-                
-                <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                    <input 
-                        type="email" 
-                        placeholder="name@email.com" 
-                        className="flex-1 px-4 py-3 rounded-[var(--radius-md)] border border-[var(--border-color)] bg-[var(--bg-secondary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-primary)]"
-                        required 
-                    />
-                    <Button type="submit">Join Newsletter</Button>
-                </form>
-            </div>
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-4">Think Better. Live Better. Build Better.</h2>
+            <p className="text-[var(--text-secondary)] mb-8">Weekly email reflections blending practical technology choices with ancient Indian wisdom.</p>
+
+            <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+              <input
+                type="email"
+                placeholder="name@email.com"
+                className="flex-1 px-4 py-3 rounded-[var(--radius-md)] border border-[var(--border-color)] bg-[var(--bg-secondary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-primary)]"
+                required
+              />
+              <Button type="submit">Join Newsletter</Button>
+            </form>
+          </div>
         </div>
       </section>
     </div>
