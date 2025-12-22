@@ -1,44 +1,43 @@
-# Tech Philosophers - AWS Deployment Guide
+# The Tech Philosophers (React Version)
 
-This guide outlines how to host your static website on AWS using S3 (storage) and CloudFront (CDN/SSL).
+This is the modern React version of The Tech Philosophers website, built with Next.js, Tailwind CSS, and Framer Motion.
 
-## Prerequisites
-- An AWS Account
-- A domain name (optional but recommended)
+## Project Structure
 
-## Step 1: Create an S3 Bucket
-1. Go to the **S3 Console**.
-2. Click **Create bucket**.
-3. Name your bucket (e.g., `tech-philosophers-site`).
-4. Uncheck **Block all public access** (we will secure it via bucket policy later, or keep it private if using CloudFront OAI/OAC - recommended).
-5. Enable **Static website hosting** in the bucket properties if you want to test directly from S3 (optional).
+- `app/`: Next.js App Router pages and layouts
+- `components/`: Reusable React components
+- `content/`: MDX blog posts and data files
+- `public/`: Static assets (images, fonts)
+- `lib/`: Utility functions (blog post processing)
+- `styles/`: Global styles
 
-## Step 2: Upload Files
-1. Upload all files from the `tech-philosophers` directory to the root of your bucket.
-   - `index.html`
-   - `styles.css`
-   - `script.js`
-   - `blog/` folder
+## Getting Started
 
-## Step 3: Configure CloudFront (Recommended for SSL & Speed)
-1. Go to the **CloudFront Console**.
-2. Click **Create Distribution**.
-3. **Origin Domain**: Select your S3 bucket.
-4. **Origin Access**: Choose **Origin access control settings (recommended)**. Create a new control setting.
-   - *Note: You will need to update your S3 bucket policy to allow CloudFront access. CloudFront provides this policy after creation.*
-5. **Viewer Protocol Policy**: Redirect HTTP to HTTPS.
-6. **Default Root Object**: `index.html`.
-7. **Create Distribution**.
+1. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-## Step 4: Update S3 Bucket Policy
-Copy the policy provided by CloudFront and paste it into your S3 Bucket Permissions > Bucket Policy.
+2. **Run Development Server**
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Step 5: Domain Name (Route 53)
-If you have a domain:
-1. Go to **Route 53**.
-2. Create an **A Record**.
-3. Toggle **Alias** to Yes.
-4. Select your CloudFront distribution.
+3. **Build for Production**
+   ```bash
+   npm run build
+   ```
+   This generates a static export in the `out/` directory.
 
-## Local Testing
-To test locally before deploying, simply open `index.html` in your browser.
+## Deployment
+
+This project is configured for static export to AWS S3.
+See [DEPLOY.md](DEPLOY.md) for detailed deployment instructions.
+
+## Key Features
+
+- **Dark Mode**: Toggle via the header icon. Persists preference.
+- **Blog**: Write posts in Markdown (MDX) in `content/blog/`.
+- **Animations**: Powered by Framer Motion.
+- **Styling**: Tailwind CSS v3 with custom design tokens in `app/globals.css`.
