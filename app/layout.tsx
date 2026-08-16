@@ -9,8 +9,11 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-main' });
 const outfit = Outfit({ subsets: ['latin'], variable: '--font-display' });
 
 export const metadata: Metadata = {
-  title: 'The Tech Philosophers | Bridging Wisdom and Tech',
-  description: 'Technologist, Educator, and Podcaster merging modern technology with time-less wisdom.',
+  metadataBase: new URL('https://www.thetechphilosophers.com'),
+  title: 'The Tech Philosophers | AI, Human Judgment and Timeless Wisdom',
+  description: 'Research, experiments and conversations connecting AI, emerging technology, human judgment and timeless wisdom.',
+  alternates: { canonical: '/' },
+  openGraph: { type: 'website', siteName: 'The Tech Philosophers', title: 'The Tech Philosophers', description: 'Exploring how AI and emerging technologies are changing the way we work, learn, think and live.', url: '/' },
 };
 
 export default function RootLayout({

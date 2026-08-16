@@ -7,7 +7,8 @@ const postsDirectory = path.join(process.cwd(), 'content/blog');
 export type BlogPost = {
     slug: string;
     title: string;
-    date: string;
+    date?: string;
+    status?: string;
     category: string;
     tags: string[];
     excerpt: string;
@@ -41,7 +42,8 @@ export function getSortedPostsData(): BlogPost[] {
             slug,
             ...(matterResult.data as {
                 title: string;
-                date: string;
+                date?: string;
+                status?: string;
                 category: string;
                 tags: string[];
                 excerpt: string;
@@ -51,14 +53,7 @@ export function getSortedPostsData(): BlogPost[] {
         };
     });
 
-    // Sort posts by date
-    return allPostsData.sort((a, b) => {
-        if (a.date < b.date) {
-            return 1;
-        } else {
-            return -1;
-        }
-    });
+    return allPostsData.sort((a, b) => a.title.localeCompare(b.title));
 }
 
 export function getAllPostSlugs() {
@@ -89,7 +84,8 @@ export function getPostData(slug: string): BlogPost {
         slug,
         ...(matterResult.data as {
             title: string;
-            date: string;
+            date?: string;
+            status?: string;
             category: string;
             tags: string[];
             excerpt: string;

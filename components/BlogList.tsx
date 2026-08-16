@@ -8,7 +8,8 @@ import Button from './Button';
 type BlogPost = {
     slug: string;
     title: string;
-    date: string;
+    date?: string;
+    status?: string;
     category: string;
     tags: string[];
     excerpt: string;
@@ -17,17 +18,13 @@ type BlogPost = {
 };
 
 export default function BlogList({ posts }: { posts: BlogPost[] }) {
-    const [selectedCategory, setSelectedCategory] = useState('AI & Technology');
-
-    // Define the specific order requested
-    const orderedCategories = ['AI & Technology', 'Mythology', 'Education'];
-
-    // Get other categories that exist but aren't in the specific list (just in case)
+    const [selectedCategory, setSelectedCategory] = useState('View All');
+    const orderedCategories = ['AI & Emerging Technology', 'Human Judgment', 'Education', 'Society & Leadership', 'Timeless Wisdom'];
     const allCategories = Array.from(new Set(posts.map(post => post.category)));
     const otherCategories = allCategories.filter(c => !orderedCategories.includes(c));
 
     // Final display list: Requested ones + any others found
-    const displayCategories = [...orderedCategories, ...otherCategories];
+    const displayCategories = [...orderedCategories.filter(c => allCategories.includes(c)), ...otherCategories];
 
     const filteredPosts = selectedCategory === 'View All'
         ? posts
@@ -89,6 +86,7 @@ export default function BlogList({ posts }: { posts: BlogPost[] }) {
                                 category={post.category}
                                 slug={post.slug}
                                 date={post.date}
+                                status={post.status}
                             />
                         </div>
                     ))}

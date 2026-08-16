@@ -74,7 +74,7 @@ export default function ServicesPage() {
 
                 <div className="text-center bg-[var(--bg-secondary)] p-12 rounded-[var(--radius-lg)] shadow-sm">
                     <h3 className="text-2xl md:text-3xl font-bold mb-8">
-                        "If you’re unsure where to start, let’s begin with a conversation."
+                        &ldquo;If you’re unsure where to start, let’s begin with a conversation.&rdquo;
                     </h3>
                     <Button href="/contact" variant="primary">
                         Contact Me

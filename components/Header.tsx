@@ -7,8 +7,6 @@ import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import DarkModeToggle from './DarkModeToggle';
 import Button from './Button';
-import Image from 'next/image'; // Add Image import
-import { LatestUpdatesBell, LatestUpdatesTicker } from './LatestUpdates'; // Named imports
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -27,10 +25,10 @@ const Header = () => {
 
     const navLinks = [
         { name: 'Home', href: '/' },
-        { name: 'About', href: '/about' },
         { name: 'Insights', href: '/blog' },
-        { name: 'Projects', href: '/projects' },
-        { name: 'Podcasts', href: '/podcasts' },
+        { name: 'Labs', href: '/labs' },
+        { name: 'Podcast', href: '/podcasts' },
+        { name: 'About', href: '/about' },
     ];
 
     return (
@@ -60,7 +58,6 @@ const Header = () => {
                         </Link>
                     ))}
                     <div className="flex items-center gap-4 border-l border-[var(--border-color)] pl-4">
-                        <LatestUpdatesBell />
                         <DarkModeToggle />
                         <Button variant="outline" href="/contact" className="!py-2 !px-4 !text-xs">
                             Contact
@@ -115,10 +112,6 @@ const Header = () => {
                 )}
             </AnimatePresence>
 
-            {/* Ticker positioned below header on homepage */}
-            <div className="absolute top-full right-8 mt-4 hidden lg:block">
-                <LatestUpdatesTicker />
-            </div>
         </header>
     );
 };

@@ -12,9 +12,10 @@ interface BlogCardProps {
     category: string;
     slug: string;
     date?: string;
+    status?: string;
 }
 
-const BlogCard: React.FC<BlogCardProps> = ({ title, excerpt, category, slug, date }) => {
+const BlogCard: React.FC<BlogCardProps> = ({ title, excerpt, category, slug, date, status }) => {
     return (
         <Link href={`/blog/${slug}`} className="block h-full">
             <Card className="h-full flex flex-col relative group overflow-hidden">
@@ -38,9 +39,9 @@ const BlogCard: React.FC<BlogCardProps> = ({ title, excerpt, category, slug, dat
                     {excerpt}
                 </p>
 
-                {date && (
+                {(status || date) && (
                     <div className="text-xs text-[var(--text-secondary)] mt-auto pt-4 border-t border-[var(--border-color)]">
-                        {date}
+                        {status || date}
                     </div>
                 )}
             </Card>

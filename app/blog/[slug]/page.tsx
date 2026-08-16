@@ -1,12 +1,12 @@
 import { getPostData, getAllPostSlugs } from '../../../lib/blog';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import Link from 'next/link';
-import { ArrowLeft, Clock, Calendar, Tag } from 'lucide-react';
+import { ArrowLeft, Clock, Tag } from 'lucide-react';
 import { Metadata } from 'next';
 
 // Define custom components for MDX
 const components = {
-    h1: (props: any) => <h1 className="text-3xl lg:text-4xl font-bold mt-8 mb-4 leading-tight" {...props} />,
+    h1: (props: any) => <h2 className="text-3xl lg:text-4xl font-bold mt-8 mb-4 leading-tight" {...props} />,
     h2: (props: any) => <h2 className="text-2xl lg:text-3xl font-bold mt-8 mb-4 leading-tight" {...props} />,
     h3: (props: any) => <h3 className="text-xl lg:text-2xl font-bold mt-6 mb-3 leading-tight" {...props} />,
     p: (props: any) => <p className="text-lg text-[var(--text-secondary)] leading-relaxed mb-6" {...props} />,
@@ -19,6 +19,7 @@ const components = {
     a: (props: any) => <a className="text-[var(--accent-primary)] hover:underline font-medium" {...props} />,
     img: (props: any) => (
         <div className="my-8 rounded-xl overflow-hidden shadow-lg">
+            {/* eslint-disable-next-line @next/next/no-img-element -- MDX accepts external and unknown image sources. */}
             <img className="w-full" {...props} alt={props.alt || 'Blog image'} />
         </div>
     ),
@@ -38,6 +39,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     return {
         title: `${postData.title} | The Tech Philosophers`,
         description: postData.excerpt,
+        alternates: { canonical: `/blog/${params.slug}` },
+        openGraph: { type: 'article', title: postData.title, description: postData.excerpt, url: `/blog/${params.slug}` },
     };
 }
 
@@ -61,10 +64,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
                             <Tag size={14} />
                             {postData.category}
                         </span>
-                        <span className="flex items-center gap-1.5">
-                            <Calendar size={16} />
-                            {postData.date}
-                        </span>
+                        {postData.status && <span className="flex items-center gap-1.5">{postData.status}</span>}
                         <span className="flex items-center gap-1.5">
                             <Clock size={16} />
                             {postData.readingTime}

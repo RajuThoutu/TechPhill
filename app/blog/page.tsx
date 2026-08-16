@@ -4,7 +4,8 @@ import BlogList from '../../components/BlogList';
 
 export const metadata = {
     title: 'Insights | The Tech Philosophers',
-    description: 'Exploring the intersection of technology, philosophy, and life through articles and essays.',
+    description: 'Essays, analysis and research notes about AI, emerging technology, human judgment and human impact.',
+    alternates: { canonical: '/blog' },
 };
 
 export default function BlogIndex() {
@@ -16,8 +17,7 @@ export default function BlogIndex() {
                 <div className="max-w-3xl mb-12">
                     <h1 className="text-4xl md:text-5xl font-bold mb-6">Insights</h1>
                     <p className="text-xl text-[var(--text-secondary)] leading-relaxed">
-                        Exploring the intersection of technology, philosophy, and life.
-                        Deep dives into AI, ancient wisdom, and the future of society.
+                        Essays, analysis and research notes about AI, emerging technology and the human questions surrounding them.
                     </p>
                 </div>
 
