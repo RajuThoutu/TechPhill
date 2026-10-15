@@ -30,7 +30,7 @@ export default function Home() {
               Research, experiments and conversations connecting technology, human judgment and timeless wisdom.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button href="/blog">Explore Insights</Button>
+              <Button href="#latest-articles">Latest articles</Button>
               <Button href="/labs" variant="outline">Explore Labs</Button>
             </div>
           </div>
@@ -40,6 +40,18 @@ export default function Home() {
               <Image src="/images/raju-profile-v2.png" alt="Raju Thoutu, founder of The Tech Philosophers" width={500} height={500} className="w-full h-auto rounded-[var(--radius-md)] object-cover" priority />
             </div>
             <div className="absolute top-6 right-6 w-full h-full bg-[var(--accent-primary)] rounded-[var(--radius-lg)] -z-10 opacity-10" />
+          </div>
+        </div>
+      </section>
+
+      <section id="latest-articles" aria-labelledby="latest-articles-heading" className="py-20 scroll-mt-24">
+        <div className="container-custom">
+          <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-6 mb-10">
+            <div><span className="text-[var(--accent-primary)] font-semibold tracking-wider uppercase text-sm">Insights</span><h2 id="latest-articles-heading" className="text-3xl md:text-4xl font-bold mt-2">Latest Articles</h2><p className="text-[var(--text-secondary)] mt-2">Newly published essays and reflections, ready to explore.</p></div>
+            <Button href="/blog" variant="outline">View all articles</Button>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {posts.map((post) => <BlogCard key={post.slug} {...post} />)}
           </div>
         </div>
       </section>
@@ -63,17 +75,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20">
-        <div className="container-custom">
-          <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-6 mb-10">
-            <div><span className="text-[var(--accent-primary)] font-semibold tracking-wider uppercase text-sm">Insights</span><h2 className="text-4xl font-bold mt-2">Ideas in progress</h2><p className="text-[var(--text-secondary)] mt-2">Essays and research notes about technology, judgment and human impact.</p></div>
-            <Button href="/blog" variant="outline">View all insights</Button>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {posts.map((post) => <BlogCard key={post.slug} {...post} />)}
-          </div>
-        </div>
-      </section>
+
 
       <section className="py-20 bg-slate-900 text-white">
         <div className="container-custom flex flex-col md:flex-row justify-between md:items-center gap-8">

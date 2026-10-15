@@ -55,3 +55,7 @@ After building, run `npm run start` in one terminal. In another, run
 `TEST_BASE_URL=http://localhost:3000 npm test` to exercise the production HTTP
 routes, sitemap, metadata and body visibility, plus the `/projects` redirect.
 Without `TEST_BASE_URL`, the fixture tests run and the HTTP test is explicitly skipped.
+
+## Latest articles
+
+Published articles are ordered by their quoted ISO publication date (`YYYY-MM-DD`), newest first. The homepage shows the first three. Missing or invalid dates appear after dated articles; ties use title and slug for a stable order. Keep dates truthful and set the actual date when publishing so new articles appear automatically.

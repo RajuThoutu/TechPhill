@@ -74,3 +74,23 @@ test('article rendering and metadata both stop at notFound for unavailable posts
         await assert.rejects(module.exports.generateMetadata({ params: Promise.resolve({ slug }) }), error => error === unavailable);
     }
 });
+
+test('newest published articles lead; invalid dates and ties have stable ordering', () => {
+    assert.equal(loadBlog().getSortedPostsData()[0].slug, 'learning-with-ai-in-a-world-that-keeps-changing');
+    const root = fs.mkdtempSync(path.join(os.tmpdir(), 'techphill-latest-'));
+    const dir = path.join(root, 'content/blog');
+    fs.mkdirSync(dir, { recursive: true });
+    try {
+        for (const [slug, title, date, publication] of [
+            ['older', 'Older', '2026-10-01', 'published'],
+            ['newest', 'Newest', '2026-10-16', 'published'],
+            ['tie-z', 'Same', '2026-10-15', 'published'],
+            ['tie-a', 'Same', '2026-10-15', 'published'],
+            ['missing', 'A missing date', '', 'published'],
+            ['invalid', 'B invalid date', '2026-02-30', 'published'],
+            ['malformed', 'C malformed date', 'tomorrow', 'published'],
+            ['draft', 'Newest draft', '2099-01-01', 'draft'],
+        ]) fs.writeFileSync(path.join(dir, `${slug}.mdx`), `---\npublication: ${publication}\ntitle: "${title}"\ndate: "${date}"\n---\nBody`);
+        assert.deepEqual(Array.from(loadBlog(root).getSortedPostsData(), p => p.slug), ['newest', 'tie-a', 'tie-z', 'older', 'missing', 'invalid', 'malformed']);
+    } finally { fs.rmSync(root, { recursive: true, force: true }); }
+});
