@@ -24,7 +24,8 @@ export function getPostData(slug: string): BlogPost | null {
     return {
         slug,
         title: typeof data.title === 'string' ? data.title : slug,
-        date: typeof data.date === 'string' ? data.date : undefined,
+        date: typeof data.date === 'string' && Number.isFinite(publicationTimestamp(data.date))
+            ? data.date : undefined,
         status: typeof data.status === 'string' ? data.status : undefined,
         category: typeof data.category === 'string' ? data.category : '',
         tags: Array.isArray(data.tags) ? data.tags.filter((tag): tag is string => typeof tag === 'string') : [],
