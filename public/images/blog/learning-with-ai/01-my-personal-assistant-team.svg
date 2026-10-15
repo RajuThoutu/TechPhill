@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1100" viewBox="0 0 1800 1100"><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#235F7A"/></marker></defs><rect width="1800" height="1100" fill="#F7FAFB"/>
+<text x="65" y="68" font-family="DejaVu Sans" font-size="39" fill="#16313D" font-weight="600" text-anchor="start">01 / The assistant team I imagined</text>
+<text x="65" y="115" font-family="DejaVu Sans" font-size="25" fill="#5D747E" font-weight="400" text-anchor="start">One personal system. Different assistants for different jobs.</text>
+<rect x="685" y="175" width="430" height="85" rx="12" fill="#235F7A" stroke="#235F7A" stroke-width="2"/>
+<text x="900.0" y="227.5" font-family="DejaVu Sans" font-size="29" fill="#FFFFFF" font-weight="600" text-anchor="middle">My goals &amp; judgment</text>
+<rect x="690" y="330" width="420" height="100" rx="12" fill="#235F7A" stroke="#235F7A" stroke-width="2"/>
+<text x="900.0" y="390.0" font-family="DejaVu Sans" font-size="29" fill="#FFFFFF" font-weight="600" text-anchor="middle">Personal coordinator</text>
+<path d="M900 260 V318" fill="none" stroke="#235F7A" stroke-width="3" marker-end="url(#arr)" marker-start="url(#arr)"/>
+<text x="1045" y="319" font-family="DejaVu Sans" font-size="23" fill="#5D747E" font-weight="400" text-anchor="middle">guidance</text>
+<path d="M120 335 C120 299 490 299 490 335 V440 C490 476 120 476 120 440Z" fill="#E9F1F4" stroke="#AABEC8" stroke-width="2"/><ellipse cx="305" cy="335" rx="185" ry="23" fill="#E9F1F4" stroke="#AABEC8" stroke-width="2"/>
+<text x="305" y="392" font-family="DejaVu Sans" font-size="30" fill="#16313D" font-weight="500" text-anchor="middle">Shared context</text>
+<text x="305" y="430" font-family="DejaVu Sans" font-size="23" fill="#5D747E" font-weight="400" text-anchor="middle">Knowledge • Decisions</text>
+<path d="M505 383 H675" fill="none" stroke="#235F7A" stroke-width="3" marker-end="url(#arr)" marker-start="url(#arr)"/>
+<text x="593" y="361" font-family="DejaVu Sans" font-size="23" fill="#5D747E" font-weight="400" text-anchor="middle">context</text>
+<path d="M900 430 V510" fill="none" stroke="#235F7A" stroke-width="3" marker-end="url(#arr)" marker-start="url(#arr)"/>
+<path d="M220 510 H1580" fill="none" stroke="#235F7A" stroke-width="3"/>
+<text x="1105" y="477" font-family="DejaVu Sans" font-size="23" fill="#5D747E" font-weight="400" text-anchor="middle">delegate / return</text>
+<path d="M220 510 V588" fill="none" stroke="#235F7A" stroke-width="3" marker-end="url(#arr)" marker-start="url(#arr)"/>
+<rect x="85" y="600" width="270" height="95" rx="12" fill="#FFFFFF" stroke="#AABEC8" stroke-width="2"/>
+<text x="220.0" y="657.5" font-family="DejaVu Sans" font-size="29" fill="#16313D" font-weight="500" text-anchor="middle">Research</text>
+<path d="M560 510 V588" fill="none" stroke="#235F7A" stroke-width="3" marker-end="url(#arr)" marker-start="url(#arr)"/>
+<rect x="425" y="600" width="270" height="95" rx="12" fill="#FFFFFF" stroke="#AABEC8" stroke-width="2"/>
+<text x="560.0" y="657.5" font-family="DejaVu Sans" font-size="29" fill="#16313D" font-weight="500" text-anchor="middle">Product / BA</text>
+<path d="M900 510 V588" fill="none" stroke="#235F7A" stroke-width="3" marker-end="url(#arr)" marker-start="url(#arr)"/>
+<rect x="765" y="600" width="270" height="95" rx="12" fill="#FFFFFF" stroke="#AABEC8" stroke-width="2"/>
+<text x="900.0" y="657.5" font-family="DejaVu Sans" font-size="29" fill="#16313D" font-weight="500" text-anchor="middle">Architecture</text>
+<path d="M1240 510 V588" fill="none" stroke="#235F7A" stroke-width="3" marker-end="url(#arr)" marker-start="url(#arr)"/>
+<rect x="1105" y="600" width="270" height="95" rx="12" fill="#FFFFFF" stroke="#AABEC8" stroke-width="2"/>
+<text x="1240.0" y="657.5" font-family="DejaVu Sans" font-size="29" fill="#16313D" font-weight="500" text-anchor="middle">Development</text>
+<path d="M1580 510 V588" fill="none" stroke="#235F7A" stroke-width="3" marker-end="url(#arr)" marker-start="url(#arr)"/>
+<rect x="1445" y="600" width="270" height="95" rx="12" fill="#FFFFFF" stroke="#AABEC8" stroke-width="2"/>
+<text x="1580.0" y="657.5" font-family="DejaVu Sans" font-size="29" fill="#16313D" font-weight="500" text-anchor="middle">Review</text>
+<path d="M1715 648 H1750 V290 H305 V310" fill="none" stroke="#235F7A" stroke-width="3" marker-end="url(#arr)" stroke-dasharray="9 7"/>
+<text x="1430" y="273" font-family="DejaVu Sans" font-size="23" fill="#5D747E" font-weight="400" text-anchor="middle">review → learning</text>
+<text x="400" y="747" font-family="DejaVu Sans" font-size="23" fill="#307A73" font-weight="600" text-anchor="middle">SPECIALIST ASSISTANTS</text>
+<path d="M220 695 V795" stroke="#235F7A" stroke-width="2" fill="none"/>
+<path d="M560 695 V795" stroke="#235F7A" stroke-width="2" fill="none"/>
+<path d="M900 695 V795" stroke="#235F7A" stroke-width="2" fill="none"/>
+<path d="M1240 695 V795" stroke="#235F7A" stroke-width="2" fill="none"/>
+<path d="M1580 695 V795" stroke="#235F7A" stroke-width="2" fill="none"/>
+<path d="M220 795 H1580" stroke="#235F7A" stroke-width="2" fill="none"/>
+<path d="M900 795 V838" fill="none" stroke="#235F7A" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="360" y="850" width="1080" height="95" rx="12" fill="#FFFFFF" stroke="#AABEC8" stroke-width="2"/>
+<text x="900.0" y="907.5" font-family="DejaVu Sans" font-size="29" fill="#16313D" font-weight="500" text-anchor="middle">Shared tools: Git • Documents • Browser • Apps</text>
+<text x="65" y="1036" font-family="DejaVu Sans" font-size="20" fill="#307A73" font-weight="600" text-anchor="start">THE TECH PHILOSOPHERS</text>
+<text x="65" y="1075" font-family="DejaVu Sans" font-size="21" fill="#5D747E" font-weight="400" text-anchor="start">Conceptual design • Roles, workflow and domain judgment remain mine to define.</text>
+</svg>

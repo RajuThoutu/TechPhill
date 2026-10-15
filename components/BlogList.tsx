@@ -5,19 +5,9 @@ import Link from 'next/link';
 import BlogCard from './BlogCard';
 import Button from './Button';
 
-type BlogPost = {
-    slug: string;
-    title: string;
-    date?: string;
-    status?: string;
-    category: string;
-    tags: string[];
-    excerpt: string;
-    content: string;
-    readingTime?: string;
-};
+import type { BlogPostSummary } from '../lib/blog-types';
 
-export default function BlogList({ posts }: { posts: BlogPost[] }) {
+export default function BlogList({ posts }: { posts: BlogPostSummary[] }) {
     const [selectedCategory, setSelectedCategory] = useState('View All');
     const orderedCategories = ['AI & Emerging Technology', 'Human Judgment', 'Education', 'Society & Leadership', 'Timeless Wisdom'];
     const allCategories = Array.from(new Set(posts.map(post => post.category)));

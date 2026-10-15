@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1100" viewBox="0 0 1800 1100"><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#235F7A"/></marker></defs><rect width="1800" height="1100" fill="#F7FAFB"/>
+<text x="65" y="68" font-family="DejaVu Sans" font-size="39" fill="#16313D" font-weight="600" text-anchor="start">02 / How AI tools are closing the gap</text>
+<text x="65" y="115" font-family="DejaVu Sans" font-size="25" fill="#5D747E" font-weight="400" text-anchor="start">Capabilities that turn chat into more personal, useful assistance.</text>
+<rect x="65" y="450" width="290" height="115" rx="12" fill="#235F7A" stroke="#235F7A" stroke-width="2"/>
+<text x="210.0" y="517.5" font-family="DejaVu Sans" font-size="29" fill="#FFFFFF" font-weight="600" text-anchor="middle">Chat + models</text>
+<text x="210" y="622" font-family="DejaVu Sans" font-size="26" fill="#5D747E" font-weight="400" text-anchor="middle">Prompt</text>
+<text x="210" y="661" font-family="DejaVu Sans" font-size="26" fill="#5D747E" font-weight="400" text-anchor="middle">Response</text>
+<path d="M355 507 H398" fill="none" stroke="#235F7A" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="410" y="450" width="290" height="115" rx="12" fill="#235F7A" stroke="#235F7A" stroke-width="2"/>
+<text x="555.0" y="517.5" font-family="DejaVu Sans" font-size="29" fill="#FFFFFF" font-weight="600" text-anchor="middle">Skills</text>
+<text x="555" y="622" font-family="DejaVu Sans" font-size="26" fill="#5D747E" font-weight="400" text-anchor="middle">Reusable</text>
+<text x="555" y="661" font-family="DejaVu Sans" font-size="26" fill="#5D747E" font-weight="400" text-anchor="middle">task guidance</text>
+<path d="M700 507 H743" fill="none" stroke="#235F7A" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="755" y="450" width="290" height="115" rx="12" fill="#235F7A" stroke="#235F7A" stroke-width="2"/>
+<text x="900.0" y="517.5" font-family="DejaVu Sans" font-size="29" fill="#FFFFFF" font-weight="600" text-anchor="middle">Tools &amp; apps</text>
+<text x="900" y="622" font-family="DejaVu Sans" font-size="26" fill="#5D747E" font-weight="400" text-anchor="middle">Connected</text>
+<text x="900" y="661" font-family="DejaVu Sans" font-size="26" fill="#5D747E" font-weight="400" text-anchor="middle">workspaces</text>
+<path d="M1045 507 H1088" fill="none" stroke="#235F7A" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="1100" y="450" width="290" height="115" rx="12" fill="#235F7A" stroke="#235F7A" stroke-width="2"/>
+<text x="1245.0" y="499.0" font-family="DejaVu Sans" font-size="29" fill="#FFFFFF" font-weight="600" text-anchor="middle">Context</text>
+<text x="1245.0" y="536.0" font-family="DejaVu Sans" font-size="29" fill="#FFFFFF" font-weight="600" text-anchor="middle">&amp; memory</text>
+<text x="1245" y="622" font-family="DejaVu Sans" font-size="26" fill="#5D747E" font-weight="400" text-anchor="middle">Knowledge</text>
+<text x="1245" y="661" font-family="DejaVu Sans" font-size="26" fill="#5D747E" font-weight="400" text-anchor="middle">across tasks</text>
+<path d="M1390 507 H1433" fill="none" stroke="#235F7A" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="1445" y="450" width="290" height="115" rx="12" fill="#235F7A" stroke="#235F7A" stroke-width="2"/>
+<text x="1590.0" y="499.0" font-family="DejaVu Sans" font-size="29" fill="#FFFFFF" font-weight="600" text-anchor="middle">Ongoing</text>
+<text x="1590.0" y="536.0" font-family="DejaVu Sans" font-size="29" fill="#FFFFFF" font-weight="600" text-anchor="middle">assistance</text>
+<text x="1590" y="622" font-family="DejaVu Sans" font-size="26" fill="#5D747E" font-weight="400" text-anchor="middle">Continuity</text>
+<text x="1590" y="661" font-family="DejaVu Sans" font-size="26" fill="#5D747E" font-weight="400" text-anchor="middle">and follow-through</text>
+<text x="900" y="330" font-family="DejaVu Sans" font-size="24" fill="#307A73" font-weight="600" text-anchor="middle">CAPABILITIES ACCUMULATE</text>
+<text x="555" y="413" font-family="DejaVu Sans" font-size="37" fill="#307A73" font-weight="600" text-anchor="middle">+</text>
+<text x="900" y="413" font-family="DejaVu Sans" font-size="37" fill="#307A73" font-weight="600" text-anchor="middle">+</text>
+<text x="1245" y="413" font-family="DejaVu Sans" font-size="37" fill="#307A73" font-weight="600" text-anchor="middle">+</text>
+<text x="1590" y="413" font-family="DejaVu Sans" font-size="37" fill="#307A73" font-weight="600" text-anchor="middle">+</text>
+<path d="M1245 695 V757 H1590 V695" fill="none" stroke="#307A73" stroke-width="2"/>
+<rect x="1270" y="787" width="300" height="73" rx="12" fill="#E3F0EB" stroke="#B3CEC4" stroke-width="2"/>
+<text x="1420" y="833" font-family="DejaVu Sans" font-size="28" fill="#307A73" font-weight="600" text-anchor="middle">Example: dot</text>
+<path d="M1420 757 V787" stroke="#307A73" stroke-width="2"/>
+<text x="900" y="940" font-family="DejaVu Sans" font-size="27" fill="#5D747E" font-weight="400" text-anchor="middle">Arrows mean added capability, not a release timeline.</text>
+<text x="65" y="1036" font-family="DejaVu Sans" font-size="20" fill="#307A73" font-weight="600" text-anchor="start">THE TECH PHILOSOPHERS</text>
+<text x="65" y="1075" font-family="DejaVu Sans" font-size="21" fill="#5D747E" font-weight="400" text-anchor="start">Conceptual capability progression • Products overlap; support varies • Oct 15, 2026</text>
+</svg>

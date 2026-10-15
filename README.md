@@ -28,11 +28,11 @@ This is the modern React version of The Tech Philosophers website, built with Ne
    ```bash
    npm run build
    ```
-   This generates a static export in the `out/` directory.
+   This generates a Next.js production build in the `.next/` directory. Use `npm run start` to serve it locally.
 
 ## Deployment
 
-This project is configured for static export to AWS S3.
+This project uses the Next.js framework and has an existing Vercel integration.
 See [DEPLOY.md](DEPLOY.md) for detailed deployment instructions.
 
 ## Key Features

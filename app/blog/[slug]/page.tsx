@@ -1,8 +1,12 @@
+import { notFound } from 'next/navigation';
 import { getPostData, getAllPostSlugs } from '../../../lib/blog';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import Link from 'next/link';
 import { ArrowLeft, Clock, Tag } from 'lucide-react';
 import { Metadata } from 'next';
+
+// Only published slugs may be served, including guessed URLs.
+export const dynamicParams = false;
 
 // Define custom components for MDX
 const components = {
@@ -18,10 +22,8 @@ const components = {
     ),
     a: (props: any) => <a className="text-[var(--accent-primary)] hover:underline font-medium" {...props} />,
     img: (props: any) => (
-        <div className="my-8 rounded-xl overflow-hidden shadow-lg">
-            {/* eslint-disable-next-line @next/next/no-img-element -- MDX accepts external and unknown image sources. */}
-            <img className="w-full" {...props} alt={props.alt || 'Blog image'} />
-        </div>
+        // eslint-disable-next-line @next/next/no-img-element -- MDX supports local SVG diagrams and external images.
+        <img className="block w-full h-auto my-8 rounded-xl shadow-lg" {...props} alt={props.alt || 'Blog image'} />
     ),
     code: (props: any) => <code className="bg-[var(--bg-secondary)] text-[var(--accent-primary)] px-1.5 py-0.5 rounded text-sm font-mono" {...props} />,
     pre: (props: any) => <pre className="bg-[#1e1e1e] text-white p-4 rounded-lg overflow-x-auto mb-6 text-sm" {...props} />,
@@ -34,18 +36,23 @@ export async function generateStaticParams() {
     }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-    const postData = getPostData(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+    const { slug } = await params;
+    const postData = getPostData(slug);
+    if (!postData) notFound();
     return {
         title: `${postData.title} | The Tech Philosophers`,
         description: postData.excerpt,
-        alternates: { canonical: `/blog/${params.slug}` },
-        openGraph: { type: 'article', title: postData.title, description: postData.excerpt, url: `/blog/${params.slug}` },
+        alternates: { canonical: `/blog/${slug}` },
+        openGraph: { type: 'article', title: postData.title, description: postData.excerpt, url: `/blog/${slug}`, ...(postData.socialImage ? { images: [postData.socialImage] } : {}) },
+        ...(postData.socialImage ? { twitter: { card: 'summary_large_image', title: postData.title, description: postData.excerpt, images: [{ url: postData.socialImage.url, alt: postData.socialImage.alt }] } } : {}),
     };
 }
 
-export default async function Post({ params }: { params: { slug: string } }) {
-    const postData = getPostData(params.slug);
+export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
+    const postData = getPostData(slug);
+    if (!postData) notFound();
 
     return (
         <div className="py-20">

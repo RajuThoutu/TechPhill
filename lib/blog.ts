@@ -1,96 +1,56 @@
+import 'server-only';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import type { BlogPost, BlogPostSummary } from './blog-types';
 
 const postsDirectory = path.join(process.cwd(), 'content/blog');
 
-export type BlogPost = {
-    slug: string;
-    title: string;
-    date?: string;
-    status?: string;
-    category: string;
-    tags: string[];
-    excerpt: string;
-    content: string;
-    readingTime?: string;
-};
+/** Fail closed: missing, misspelled, or non-string values remain unpublished. */
+export function isPublished(data: Record<string, unknown>): boolean {
+    return data.publication === 'published';
+}
 
-export function getSortedPostsData(): BlogPost[] {
-    // Create directory if it doesn't exist
-    if (!fs.existsSync(postsDirectory)) {
-        return [];
-    }
+export function getPostData(slug: string): BlogPost | null {
+    // Reject traversal, extensions, and unsupported filenames before reading disk.
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) return null;
+    const fullPath = path.join(postsDirectory, `${slug}.mdx`);
+    if (!fs.existsSync(fullPath) || !fs.statSync(fullPath).isFile()) return null;
+    const { data, content } = matter(fs.readFileSync(fullPath, 'utf8'));
+    if (!isPublished(data)) return null;
 
-    const fileNames = fs.readdirSync(postsDirectory);
-    const allPostsData = fileNames.map((fileName) => {
-        // Remove ".mdx" from file name to get id
-        const slug = fileName.replace(/\.mdx$/, '');
+    const words = content.trim() ? content.trim().split(/\s+/).length : 0;
+    // Explicit field selection prevents arbitrary frontmatter reaching client props.
+    return {
+        slug,
+        title: typeof data.title === 'string' ? data.title : slug,
+        date: typeof data.date === 'string' ? data.date : undefined,
+        status: typeof data.status === 'string' ? data.status : undefined,
+        category: typeof data.category === 'string' ? data.category : '',
+        tags: Array.isArray(data.tags) ? data.tags.filter((tag): tag is string => typeof tag === 'string') : [],
+        excerpt: typeof data.excerpt === 'string' ? data.excerpt : '',
+        content,
+        socialImage: typeof data.socialImage === 'string'
+            && /^\/images\/blog\/[a-z0-9-]+\/[a-z0-9-]+\.png$/.test(data.socialImage)
+            && typeof data.socialImageAlt === 'string'
+            && Number.isInteger(data.socialImageWidth) && data.socialImageWidth > 0
+            && Number.isInteger(data.socialImageHeight) && data.socialImageHeight > 0
+            ? { url: data.socialImage, alt: data.socialImageAlt, width: data.socialImageWidth, height: data.socialImageHeight }
+            : undefined,
+        readingTime: Math.max(1, Math.ceil(words / 225)) + ' min read',
+    };
+}
 
-        // Read markdown file as string
-        const fullPath = path.join(postsDirectory, fileName);
-        const fileContents = fs.readFileSync(fullPath, 'utf8');
-
-        // Use gray-matter to parse the post metadata section
-        const matterResult = matter(fileContents);
-
-        // Estimate reading time
-        const words = matterResult.content.trim().split(/\s+/).length;
-        const readingTime = Math.ceil(words / 225) + ' min read';
-
-        return {
-            slug,
-            ...(matterResult.data as {
-                title: string;
-                date?: string;
-                status?: string;
-                category: string;
-                tags: string[];
-                excerpt: string;
-            }),
-            content: matterResult.content,
-            readingTime
-        };
-    });
-
-    return allPostsData.sort((a, b) => a.title.localeCompare(b.title));
+export function getSortedPostsData(): BlogPostSummary[] {
+    if (!fs.existsSync(postsDirectory)) return [];
+    return fs.readdirSync(postsDirectory, { withFileTypes: true })
+        .filter(entry => entry.isFile() && entry.name.endsWith('.mdx'))
+        .map(entry => getPostData(entry.name.slice(0, -4)))
+        .filter((post): post is BlogPost => post !== null)
+        .map(({ content, socialImage, ...summary }) => summary)
+        .sort((a, b) => a.title.localeCompare(b.title));
 }
 
 export function getAllPostSlugs() {
-    if (!fs.existsSync(postsDirectory)) {
-        return [];
-    }
-    const fileNames = fs.readdirSync(postsDirectory);
-    return fileNames.map((fileName) => {
-        return {
-            params: {
-                slug: fileName.replace(/\.mdx$/, ''),
-            },
-        };
-    });
-}
-
-export function getPostData(slug: string): BlogPost {
-    const fullPath = path.join(postsDirectory, `${slug}.mdx`);
-    const fileContents = fs.readFileSync(fullPath, 'utf8');
-
-    // Use gray-matter to parse the post metadata section
-    const matterResult = matter(fileContents);
-
-    const words = matterResult.content.trim().split(/\s+/).length;
-    const readingTime = Math.ceil(words / 225) + ' min read';
-
-    return {
-        slug,
-        ...(matterResult.data as {
-            title: string;
-            date?: string;
-            status?: string;
-            category: string;
-            tags: string[];
-            excerpt: string;
-        }),
-        content: matterResult.content,
-        readingTime
-    };
+    return getSortedPostsData().map(({ slug }) => ({ params: { slug } }));
 }
