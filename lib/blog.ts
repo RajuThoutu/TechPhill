@@ -30,6 +30,13 @@ export function getPostData(slug: string): BlogPost | null {
         tags: Array.isArray(data.tags) ? data.tags.filter((tag): tag is string => typeof tag === 'string') : [],
         excerpt: typeof data.excerpt === 'string' ? data.excerpt : '',
         content,
+        socialImage: typeof data.socialImage === 'string'
+            && /^\/images\/blog\/[a-z0-9-]+\/[a-z0-9-]+\.png$/.test(data.socialImage)
+            && typeof data.socialImageAlt === 'string'
+            && Number.isInteger(data.socialImageWidth) && data.socialImageWidth > 0
+            && Number.isInteger(data.socialImageHeight) && data.socialImageHeight > 0
+            ? { url: data.socialImage, alt: data.socialImageAlt, width: data.socialImageWidth, height: data.socialImageHeight }
+            : undefined,
         readingTime: Math.max(1, Math.ceil(words / 225)) + ' min read',
     };
 }
@@ -40,7 +47,7 @@ export function getSortedPostsData(): BlogPostSummary[] {
         .filter(entry => entry.isFile() && entry.name.endsWith('.mdx'))
         .map(entry => getPostData(entry.name.slice(0, -4)))
         .filter((post): post is BlogPost => post !== null)
-        .map(({ content, ...summary }) => summary)
+        .map(({ content, socialImage, ...summary }) => summary)
         .sort((a, b) => a.title.localeCompare(b.title));
 }
 

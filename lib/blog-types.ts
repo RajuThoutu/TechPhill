@@ -10,4 +10,7 @@ export type BlogPostSummary = {
     readingTime: string;
 };
 
-export type BlogPost = BlogPostSummary & { content: string };
+export type BlogPost = BlogPostSummary & {
+    content: string;
+    socialImage?: { url: string; alt: string; width: number; height: number };
+};
