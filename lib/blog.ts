@@ -24,7 +24,8 @@ export function getPostData(slug: string): BlogPost | null {
     return {
         slug,
         title: typeof data.title === 'string' ? data.title : slug,
-        date: typeof data.date === 'string' ? data.date : undefined,
+        date: typeof data.date === 'string' && Number.isFinite(publicationTimestamp(data.date))
+            ? data.date : undefined,
         status: typeof data.status === 'string' ? data.status : undefined,
         category: typeof data.category === 'string' ? data.category : '',
         tags: Array.isArray(data.tags) ? data.tags.filter((tag): tag is string => typeof tag === 'string') : [],
@@ -41,6 +42,14 @@ export function getPostData(slug: string): BlogPost | null {
     };
 }
 
+function publicationTimestamp(date?: string): number {
+    // Require a real ISO calendar date; missing/invalid dates sort after dated posts.
+    if (!date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) return Number.NEGATIVE_INFINITY;
+    const timestamp = Date.parse(`${date}T00:00:00Z`);
+    return Number.isFinite(timestamp) && new Date(timestamp).toISOString().slice(0, 10) === date
+        ? timestamp : Number.NEGATIVE_INFINITY;
+}
+
 export function getSortedPostsData(): BlogPostSummary[] {
     if (!fs.existsSync(postsDirectory)) return [];
     return fs.readdirSync(postsDirectory, { withFileTypes: true })
@@ -48,7 +57,12 @@ export function getSortedPostsData(): BlogPostSummary[] {
         .map(entry => getPostData(entry.name.slice(0, -4)))
         .filter((post): post is BlogPost => post !== null)
         .map(({ content, socialImage, ...summary }) => summary)
-        .sort((a, b) => a.title.localeCompare(b.title));
+        .sort((a, b) => {
+            const aDate = publicationTimestamp(a.date);
+            const bDate = publicationTimestamp(b.date);
+            return aDate !== bDate ? bDate - aDate
+                : a.title.localeCompare(b.title) || a.slug.localeCompare(b.slug);
+        });
 }
 
 export function getAllPostSlugs() {

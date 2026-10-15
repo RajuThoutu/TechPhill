@@ -74,3 +74,51 @@ test('article rendering and metadata both stop at notFound for unavailable posts
         await assert.rejects(module.exports.generateMetadata({ params: Promise.resolve({ slug }) }), error => error === unavailable);
     }
 });
+
+test('newest articles lead; invalid dates normalize and render the unavailable fallback', () => {
+    assert.equal(loadBlog().getSortedPostsData()[0].slug, 'learning-with-ai-in-a-world-that-keeps-changing');
+    const root = fs.mkdtempSync(path.join(os.tmpdir(), 'techphill-latest-'));
+    const dir = path.join(root, 'content/blog');
+    fs.mkdirSync(dir, { recursive: true });
+    try {
+        for (const [slug, title, date, publication] of [
+            ['older', 'Older', '2026-10-01', 'published'],
+            ['newest', 'Newest', '2026-10-16', 'published'],
+            ['tie-z', 'Same', '2026-10-15', 'published'],
+            ['tie-a', 'Same', '2026-10-15', 'published'],
+            ['missing', 'A missing date', '', 'published'],
+            ['invalid', 'B invalid date', '2026-02-30', 'published'],
+            ['malformed', 'C malformed date', 'tomorrow', 'published'],
+            ['draft', 'Newest draft', '2099-01-01', 'draft'],
+        ]) fs.writeFileSync(path.join(dir, `${slug}.mdx`), `---\npublication: ${publication}\ntitle: "${title}"\ndate: "${date}"\n---\nBody`);
+        const blog = loadBlog(root);
+        assert.deepEqual(Array.from(blog.getSortedPostsData(), p => p.slug), ['newest', 'tie-a', 'tie-z', 'older', 'missing', 'invalid', 'malformed']);
+        // Render the actual card and its Card component with React SSR, not a
+        // hand-written substitute, using posts returned by the server boundary.
+        function loadComponent(name) {
+            const source = fs.readFileSync(path.join(__dirname, '../components', name + '.tsx'), 'utf8');
+            const { outputText } = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.CommonJS, jsx: ts.JsxEmit.ReactJSX, esModuleInterop: true } });
+            const module = { exports: {} };
+            vm.runInNewContext(outputText, {
+                exports: module.exports, module,
+                require: name => name === './Card' ? loadComponent('Card') : require(name),
+            });
+            return module.exports;
+        }
+        const BlogCard = loadComponent('BlogCard').default;
+        const React = require('react');
+        const { renderToStaticMarkup } = require('react-dom/server');
+        for (const slug of ['missing', 'invalid', 'malformed']) {
+            const post = blog.getPostData(slug);
+            assert.equal(post.date, undefined);
+            assert.equal(blog.getSortedPostsData().find(p => p.slug === slug).date, undefined);
+            const html = renderToStaticMarkup(React.createElement(BlogCard, post));
+            assert.ok(html.includes('Publication date unavailable'), slug);
+            assert.ok(!html.includes('<time'), slug);
+            assert.ok(!html.includes('2026-02-30') && !html.includes('tomorrow'), slug);
+        }
+        const valid = blog.getPostData('newest');
+        assert.equal(valid.date, '2026-10-16');
+        assert.ok(renderToStaticMarkup(React.createElement(BlogCard, valid)).includes('<time dateTime="2026-10-16">2026-10-16</time>'));
+    } finally { fs.rmSync(root, { recursive: true, force: true }); }
+});

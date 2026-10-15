@@ -35,15 +35,19 @@ const BlogCard: React.FC<BlogCardProps> = ({ title, excerpt, category, slug, dat
                     {title}
                 </h3>
 
-                <p className="text-[var(--text-secondary)] text-sm leading-relaxed mb-4 flex-grow">
+                <p className="text-[var(--text-secondary)] text-sm leading-relaxed mb-4 flex-grow line-clamp-3">
                     {excerpt}
                 </p>
 
-                {(status || date) && (
-                    <div className="text-xs text-[var(--text-secondary)] mt-auto pt-4 border-t border-[var(--border-color)]">
-                        {status || date}
+                <div className="mt-auto pt-4 border-t border-[var(--border-color)] space-y-3">
+                    <div className="flex flex-wrap gap-x-3 gap-y-1 text-xs text-[var(--text-secondary)]">
+                            {date ? <time dateTime={date}>{date}</time> : <span>Publication date unavailable</span>}
+                            {status && <span>{status}</span>}
                     </div>
-                )}
+                    <span className="inline-flex items-center gap-1 text-sm font-semibold text-[var(--accent-primary)]">
+                        Read article <ArrowUpRight size={16} aria-hidden="true" />
+                    </span>
+                </div>
             </Card>
         </Link>
     );
