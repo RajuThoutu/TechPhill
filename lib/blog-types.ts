@@ -12,5 +12,6 @@ export type BlogPostSummary = {
 
 export type BlogPost = BlogPostSummary & {
     content: string;
+    metaDescription?: string;
     socialImage?: { url: string; alt: string; width: number; height: number };
 };

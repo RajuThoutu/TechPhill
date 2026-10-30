@@ -18,10 +18,10 @@ function loadBlog(root = process.cwd()) {
     });
     return module.exports;
 }
-const published = ['ai-revolution-2026', 'learning-with-ai-in-a-world-that-keeps-changing', 'pega-to-llms', 'you-are-not-ai-slave'];
+const published = ['ai-revolution-2026', 'if-ai-can-write-software-why-buy-enterprise-platform', 'learning-with-ai-in-a-world-that-keeps-changing', 'pega-to-llms', 'you-are-not-ai-slave'];
 const drafts = ['enterprise-copilots', 'hybrid-learning', 'rama-vs-arjuna', 'success-vs-connection', 'pega-azure-ai', 'krishna-leadership'];
 
-test('only the four approved posts are published, and lists never serialize bodies', () => {
+test('only the five approved posts are published, and lists never serialize bodies', () => {
     const blog = loadBlog();
     const posts = blog.getSortedPostsData();
     assert.deepEqual(Array.from(posts, p => p.slug).sort(), published);
@@ -76,7 +76,7 @@ test('article rendering and metadata both stop at notFound for unavailable posts
 });
 
 test('newest articles lead; invalid dates normalize and render the unavailable fallback', () => {
-    assert.equal(loadBlog().getSortedPostsData()[0].slug, 'learning-with-ai-in-a-world-that-keeps-changing');
+    assert.equal(loadBlog().getSortedPostsData()[0].slug, 'if-ai-can-write-software-why-buy-enterprise-platform');
     const root = fs.mkdtempSync(path.join(os.tmpdir(), 'techphill-latest-'));
     const dir = path.join(root, 'content/blog');
     fs.mkdirSync(dir, { recursive: true });

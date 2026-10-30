@@ -30,6 +30,7 @@ export function getPostData(slug: string): BlogPost | null {
         category: typeof data.category === 'string' ? data.category : '',
         tags: Array.isArray(data.tags) ? data.tags.filter((tag): tag is string => typeof tag === 'string') : [],
         excerpt: typeof data.excerpt === 'string' ? data.excerpt : '',
+        metaDescription: typeof data.metaDescription === 'string' ? data.metaDescription : undefined,
         content,
         socialImage: typeof data.socialImage === 'string'
             && /^\/images\/blog\/[a-z0-9-]+\/[a-z0-9-]+\.png$/.test(data.socialImage)
@@ -56,7 +57,7 @@ export function getSortedPostsData(): BlogPostSummary[] {
         .filter(entry => entry.isFile() && entry.name.endsWith('.mdx'))
         .map(entry => getPostData(entry.name.slice(0, -4)))
         .filter((post): post is BlogPost => post !== null)
-        .map(({ content, socialImage, ...summary }) => summary)
+        .map(({ content, socialImage, metaDescription, ...summary }) => summary)
         .sort((a, b) => {
             const aDate = publicationTimestamp(a.date);
             const bDate = publicationTimestamp(b.date);

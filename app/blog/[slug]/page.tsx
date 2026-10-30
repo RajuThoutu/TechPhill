@@ -40,12 +40,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const { slug } = await params;
     const postData = getPostData(slug);
     if (!postData) notFound();
+    const description = postData.metaDescription || postData.excerpt;
     return {
         title: `${postData.title} | The Tech Philosophers`,
-        description: postData.excerpt,
+        description,
         alternates: { canonical: `/blog/${slug}` },
-        openGraph: { type: 'article', title: postData.title, description: postData.excerpt, url: `/blog/${slug}`, ...(postData.socialImage ? { images: [postData.socialImage] } : {}) },
-        ...(postData.socialImage ? { twitter: { card: 'summary_large_image', title: postData.title, description: postData.excerpt, images: [{ url: postData.socialImage.url, alt: postData.socialImage.alt }] } } : {}),
+        openGraph: { type: 'article', title: postData.title, description, url: `/blog/${slug}`, ...(postData.socialImage ? { images: [postData.socialImage] } : {}) },
+        ...(postData.socialImage ? { twitter: { card: 'summary_large_image', title: postData.title, description, images: [{ url: postData.socialImage.url, alt: postData.socialImage.alt }] } } : {}),
     };
 }
 
